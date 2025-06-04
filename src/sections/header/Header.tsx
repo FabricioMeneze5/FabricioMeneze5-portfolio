@@ -1,9 +1,11 @@
-import { useState } from 'react';
 import { BgHeader, NavBar, ContainerHeader, ToggleBtn } from './styles';
 
-const Header = () => {
-  const [isDark, setIsDark] = useState(true);
+type Props = {
+  isDark: boolean;
+  changeTheme: () => void;
+};
 
+const Header = ({ isDark, changeTheme }: Props) => {
   return (
     <BgHeader id="header">
       <ContainerHeader className="container">
@@ -18,7 +20,7 @@ const Header = () => {
           </li>
           <li>Pt/En</li>
           <li>
-            <ToggleBtn isDark={isDark} onClick={() => setIsDark(!isDark)} />
+            <ToggleBtn isDark={isDark} onClick={changeTheme} />
           </li>
         </NavBar>
       </ContainerHeader>

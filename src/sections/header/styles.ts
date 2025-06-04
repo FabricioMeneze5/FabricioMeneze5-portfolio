@@ -5,7 +5,7 @@ type Props = {
 };
 
 export const BgHeader = styled.div`
-  background-color: #3e3d3d;
+  background-color: ${(props) => props.theme.secundaryColor};
 `;
 
 export const ContainerHeader = styled.div`
@@ -18,11 +18,12 @@ export const ContainerHeader = styled.div`
   h1 {
     font-size: 24px;
     font-weight: lighter;
-    color: #1e88e5;
+    color: ${(props) => props.theme.mainColor};
     cursor: pointer;
 
     b {
-      color: #ffffff;
+      color: ${(props) => props.theme.mainTextColor};
+      margin-right: 5px;
     }
   }
 `;
@@ -30,7 +31,7 @@ export const ContainerHeader = styled.div`
 export const NavBar = styled.ul`
   display: flex;
   align-items: center;
-  color: #ffffff;
+  color: ${(props) => props.theme.mainTextColor};
   font-weight: 100;
 
   li {
@@ -44,7 +45,7 @@ export const ToggleBtn = styled.div<Props>`
   width: 50px;
   height: 24px;
   border-radius: 12px;
-  background-color: ${(props) => (props.isDark ? '#ccc' : '#333')};
+  background-color: ${(props) => props.theme.secundaryText};
   cursor: pointer;
   position: relative;
   transition: all 0.3s ease;
@@ -56,8 +57,11 @@ export const ToggleBtn = styled.div<Props>`
     top: 3px;
     left: ${(props) => (props.isDark ? '3px' : '26px')};
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: ${(props) => props.theme.background1};
     position: absolute;
-    transition: left 0.3s ease;
+    transition: left 0.5s ease;
+  }
+  &:hover::after {
+    transform: scale(1.1);
   }
 `;
