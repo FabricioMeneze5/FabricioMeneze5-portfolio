@@ -6,6 +6,8 @@ type Props = {
 
 export const BgHeader = styled.div`
   background-color: ${(props) => props.theme.secundaryColor};
+  position: static;
+  top: 0px;
 `;
 
 export const ContainerHeader = styled.div`
@@ -18,6 +20,7 @@ export const ContainerHeader = styled.div`
   h1 {
     font-size: 24px;
     font-weight: lighter;
+    font-style: italic;
     color: ${(props) => props.theme.mainColor};
     cursor: pointer;
 
@@ -32,7 +35,6 @@ export const NavBar = styled.ul`
   display: flex;
   align-items: center;
   color: ${(props) => props.theme.mainTextColor};
-  font-weight: 100;
 
   li {
     margin-left: 12px;

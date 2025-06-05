@@ -1,6 +1,6 @@
 const themeDark = {
   mainColor: '#1E88E5',
-  secundaryColor: '#1A1A1A',
+  secundaryColor: '#3E3D3D',
   background1: '#121212',
   background2: '#1E1E1E',
   mainTextColor: '#E0E0E0',

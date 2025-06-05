@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-      <ThemeProvider theme={getTheme ? themeLight : themeDark}>
+      <ThemeProvider theme={getTheme ? themeDark : themeLight}>
         <GlobalStyle />
         <Header changeTheme={changeTheme} isDark={getTheme} />
         <Hero />
