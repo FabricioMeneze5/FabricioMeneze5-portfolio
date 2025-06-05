@@ -25,10 +25,10 @@ function App() {
         <GlobalStyle />
         <Header changeTheme={changeTheme} isDark={getTheme} />
         <Hero />
-        <Projects />
+        {/* <Projects />
         <Services />
         <Contact />
-        <Footer />
+        <Footer /> */}
       </ThemeProvider>
     </>
   );

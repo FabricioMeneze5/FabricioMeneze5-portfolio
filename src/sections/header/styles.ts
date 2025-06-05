@@ -6,7 +6,7 @@ type Props = {
 
 export const BgHeader = styled.div`
   background-color: ${(props) => props.theme.secundaryColor};
-  position: static;
+  position: sticky;
   top: 0px;
 `;
 
@@ -15,7 +15,7 @@ export const ContainerHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 96px;
+  height: 64px;
 
   h1 {
     font-size: 24px;
