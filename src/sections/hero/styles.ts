@@ -78,21 +78,6 @@ export const ImageHero = styled.div`
   img {
     width: 350px;
     height: 350px;
-  }
-`;
-
-export const Carrossel = styled.div`
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 74px;
-  overflow-x: hidden;
-  position: absolute;
-  bottom: 0;
-
-  img {
-    border: 1px solid ${(props) => props.theme.mainTextColor};
-    border-radius: 50%;
-    margin: 0 5px;
+    object-fit: cover;
   }
 `;

@@ -1,5 +1,7 @@
 import * as S from './styles';
-// import avatar from '../../assets/img/eu (2).jpg';
+import avatar from '../../assets/img/eu (2).jpg';
+import Carousel from '../../components/carousel/Carousel';
+// import avatar from '../../assets/svg/bootstrap.svg';
 
 const Hero = () => {
   return (
@@ -32,27 +34,10 @@ const Hero = () => {
           </ul>
         </S.TextHero>
         <S.ImageHero>
-          <img src="https://picsum.photos/400/400" alt="FabricioMeneze5 imagem" />
-          {/* <img src={avatar} alt="FabricioMeneze5 imagem" /> */}
+          <img src={avatar} alt="FabricioMeneze5 img" />
         </S.ImageHero>
       </S.HeroContent>
-      <S.Carrossel>
-        <img src="https://picsum.photos/64" alt="imagem" title="React" />
-        <img src="https://picsum.photos/64" alt="imagem" title="React" />
-        <img src="https://picsum.photos/64" alt="imagem" title="React" />
-        <img src="https://picsum.photos/64" alt="imagem" title="React" />
-        <img src="https://picsum.photos/64" alt="imagem" title="React" />
-        <img src="https://picsum.photos/64" alt="imagem" title="React" />
-        <img src="https://picsum.photos/64" alt="imagem" title="React" />
-        <img src="https://picsum.photos/64" alt="imagem" title="React" />
-        <img src="https://picsum.photos/64" alt="imagem" title="React" />
-        <img src="https://picsum.photos/64" alt="imagem" title="React" />
-        <img src="https://picsum.photos/64" alt="imagem" title="React" />
-        <img src="https://picsum.photos/64" alt="imagem" title="React" />
-        <img src="https://picsum.photos/64" alt="imagem" title="React" />
-        <img src="https://picsum.photos/64" alt="imagem" title="React" />
-        <img src="https://picsum.photos/64" alt="imagem" title="React" />
-      </S.Carrossel>
+      <Carousel />
     </S.SectionHero>
   );
 };
