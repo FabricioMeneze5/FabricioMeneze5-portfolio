@@ -31,27 +31,15 @@ export const TextHero = styled.div`
 
   color: ${(props) => props.theme.mainColor};
 
-  p {
+  > p {
     font-size: 64px;
     line-height: 50px;
-    font-size: 64px;
-  }
-
-  p:nth-of-type(1) {
     font-family: 'Aldrich', sans-serif;
     font-size: 64px;
     line-height: 50px;
   }
 
-  p:nth-of-type(2) {
-    font-family: 'Aldrich', sans-serif;
-    text-align: end;
-  }
-
-  p:nth-of-type(3) {
-    font-size: 36px;
-    line-height: 35px;
-    margin: 15px 0;
+  > p:nth-of-type(2) {
     text-align: end;
   }
 
@@ -70,6 +58,7 @@ export const TextHero = styled.div`
       justify-content: center;
       border-radius: 50%;
     }
+
     li:nth-child(2) {
       border-radius: 50%;
     }

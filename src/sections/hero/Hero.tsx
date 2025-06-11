@@ -5,6 +5,7 @@ import Carousel from '../../components/carousel';
 import github from '../../assets/svg/github.svg';
 import linkedin from '../../assets/svg/linkedin.svg';
 import downloadAnimation from '../../assets/animations/download-animation.json';
+import Typewriter from '../../components/typewriter';
 
 const Hero = () => {
   return (
@@ -17,10 +18,7 @@ const Hero = () => {
           <p>
             Menezes<span>{'/>'}</span>
           </p>
-          <p>
-            Solving problems <span>since</span> <br />
-            <span>my first</span> Hello World.
-          </p>
+          <Typewriter />
           <ul>
             <li>
               <a href="downloads/download-test.txt" download>
