@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Lottie from 'lottie-react';
 
 export const SectionHero = styled.div`
   display: flex;
@@ -14,6 +15,12 @@ export const HeroContent = styled.div`
   display: flex;
   align-items: center;
   padding-bottom: 74px;
+`;
+
+export const LottieIcon = styled(Lottie)`
+  width: 125px;
+  height: 125px;
+  background-color: #fff;
 `;
 
 export const TextHero = styled.div`
@@ -56,17 +63,21 @@ export const TextHero = styled.div`
     justify-content: center;
     width: 100%;
 
+    li:nth-child(1) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+    li:nth-child(2) {
+      border-radius: 50%;
+    }
+
     li {
       margin: 0 10px;
       height: 64px;
       width: 64px;
-
-      a {
-        img {
-          border-radius: 50%;
-          object-fit: contain;
-        }
-      }
+      overflow: hidden;
     }
   }
 `;

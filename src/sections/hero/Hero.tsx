@@ -3,6 +3,7 @@ import avatar from '../../assets/img/eu (2).jpg';
 import Carousel from '../../components/carousel/Carousel';
 import github from '../../assets/svg/github.svg';
 import linkedin from '../../assets/svg/linkedin.svg';
+import downloadAnimation from '../../assets/animations/download-animation.json';
 
 const Hero = () => {
   return (
@@ -22,7 +23,7 @@ const Hero = () => {
           <ul>
             <li>
               <a href="downloads/download-test.txt" download>
-                <img src="https://picsum.photos/64" alt="Download CS" title="CV" />
+                <S.LottieIcon animationData={downloadAnimation} />
               </a>
             </li>
             <li>
