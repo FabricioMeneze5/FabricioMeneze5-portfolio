@@ -21,7 +21,7 @@ const Hero = () => {
           </p>
           <ul>
             <li>
-              <a href={avatar} download>
+              <a href="downloads/download-test.txt" download>
                 <img src="https://picsum.photos/64" alt="Download CS" title="CV" />
               </a>
             </li>
