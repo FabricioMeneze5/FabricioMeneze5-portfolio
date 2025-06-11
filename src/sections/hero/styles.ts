@@ -35,11 +35,8 @@ export const TextHero = styled.div`
     font-size: 64px;
     line-height: 50px;
     font-size: 64px;
-
-    span {
-      color: ${(props) => props.theme.mainTextColor};
-    }
   }
+
   p:nth-of-type(1) {
     font-family: 'Aldrich', sans-serif;
     font-size: 64px;
@@ -56,6 +53,10 @@ export const TextHero = styled.div`
     line-height: 35px;
     margin: 15px 0;
     text-align: end;
+  }
+
+  span {
+    color: ${(props) => props.theme.mainTextColor};
   }
 
   ul {

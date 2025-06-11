@@ -1,6 +1,7 @@
 import * as S from './styles';
+
 import avatar from '../../assets/img/eu (2).jpg';
-import Carousel from '../../components/carousel/Carousel';
+import Carousel from '../../components/carousel';
 import github from '../../assets/svg/github.svg';
 import linkedin from '../../assets/svg/linkedin.svg';
 import downloadAnimation from '../../assets/animations/download-animation.json';
