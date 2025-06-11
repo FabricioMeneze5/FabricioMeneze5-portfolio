@@ -1,7 +1,8 @@
 import * as S from './styles';
 import avatar from '../../assets/img/eu (2).jpg';
 import Carousel from '../../components/carousel/Carousel';
-// import avatar from '../../assets/svg/bootstrap.svg';
+import github from '../../assets/svg/github.svg';
+import linkedin from '../../assets/svg/linkedin.svg';
 
 const Hero = () => {
   return (
@@ -20,16 +21,23 @@ const Hero = () => {
           </p>
           <ul>
             <li>
-              <img src="https://picsum.photos/64" alt="imagem" title="React" />
+              <a href={avatar} download>
+                <img src="https://picsum.photos/64" alt="Download CS" title="CV" />
+              </a>
             </li>
             <li>
-              <img src="https://picsum.photos/64" alt="imagem" title="React" />
+              <a href="https://github.com/FabricioMeneze5" target="_blank" rel="noreferrer">
+                <img src={github} alt="github" />
+              </a>
             </li>
             <li>
-              <img src="https://picsum.photos/64" alt="imagem" title="React" />
-            </li>
-            <li>
-              <img src="https://picsum.photos/64" alt="imagem" title="React" />
+              <a
+                href="https://www.linkedin.com/in/fabricio-meneze5/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={linkedin} alt="linkedin" />
+              </a>
             </li>
           </ul>
         </S.TextHero>

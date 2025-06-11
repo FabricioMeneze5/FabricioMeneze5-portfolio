@@ -14,10 +14,6 @@ export const HeroContent = styled.div`
   display: flex;
   align-items: center;
   padding-bottom: 74px;
-
-  img {
-    border-radius: 50%;
-  }
 `;
 
 export const TextHero = styled.div`
@@ -25,7 +21,6 @@ export const TextHero = styled.div`
   flex-direction: column;
   width: 100%;
   height: 100%;
-  /* background-color: brown; */
 
   color: ${(props) => props.theme.mainColor};
 
@@ -63,6 +58,15 @@ export const TextHero = styled.div`
 
     li {
       margin: 0 10px;
+      height: 64px;
+      width: 64px;
+
+      a {
+        img {
+          border-radius: 50%;
+          object-fit: contain;
+        }
+      }
     }
   }
 `;
@@ -73,11 +77,11 @@ export const ImageHero = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
-  /* background-color: blueviolet; */
 
   img {
     width: 350px;
     height: 350px;
     object-fit: cover;
+    border-radius: 50%;
   }
 `;

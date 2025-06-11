@@ -13,8 +13,8 @@ export const ContainerCarousel = styled.div`
   }
 
   img {
-    width: 64px;
-    height: 64px;
+    width: 52px;
+    height: 52px;
     border-radius: 50%;
     margin: 0 5px;
   }
