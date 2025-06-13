@@ -6,6 +6,7 @@ import github from '../../assets/svg/github.svg';
 import linkedin from '../../assets/svg/linkedin.svg';
 import downloadAnimation from '../../assets/animations/download-animation.json';
 import Typewriter from '../../components/typewriter';
+import Tilt from 'react-parallax-tilt';
 
 const Hero = () => {
   return (
@@ -42,7 +43,9 @@ const Hero = () => {
           </ul>
         </S.TextHero>
         <S.ImageHero>
-          <img src={avatar} alt="FabricioMeneze5 img" />
+          <Tilt tiltReverse perspective={3000}>
+            <img src={avatar} alt="FabricioMeneze5 img" />
+          </Tilt>
         </S.ImageHero>
       </S.HeroContent>
       <Carousel />
