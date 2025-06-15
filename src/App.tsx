@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 
 import Header from './sections/header';
-import Hero from './sections/hero/Hero';
+import Hero from './sections/hero';
 // import Contact from './sections/contact';
 // import Footer from './sections/footer';
 // import Projects from './sections/projects/Projects';

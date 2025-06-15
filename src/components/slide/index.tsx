@@ -1,4 +1,5 @@
 import * as S from './styles';
+
 import bootstrap from '../../assets/svg/bootstrap.svg';
 import cypressio from '../../assets/svg/cypressio.svg';
 import eslint from '../../assets/svg/eslint.svg';
@@ -41,19 +42,23 @@ const dados: dados[] = [
   { name: 'Less', img: less },
 ];
 
-const Carousel = () => {
+const Slide = () => {
   return (
-    <S.ContainerCarousel>
-      <div>
-        {dados.map((dado, index) => (
-          <img key={index} src={dado.img} alt={dado.name} title={dado.name} />
-        ))}
-        {dados.map((dado, index) => (
-          <img key={`${index}-copy`} src={dado.img} alt={dado.name} title={dado.name} />
-        ))}
+    <S.ContainerSlide>
+      <div className="slide">
+        <div className="images">
+          {dados.map((dado, index) => (
+            <img key={index} src={dado.img} alt={dado.name} title={dado.name} />
+          ))}
+        </div>
+        <div className="images">
+          {dados.map((dado, index) => (
+            <img key={index} src={dado.img} alt={dado.name} title={dado.name} />
+          ))}
+        </div>
       </div>
-    </S.ContainerCarousel>
+    </S.ContainerSlide>
   );
 };
 
-export default Carousel;
+export default Slide;
