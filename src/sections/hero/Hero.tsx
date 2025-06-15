@@ -1,12 +1,12 @@
+import Tilt from 'react-parallax-tilt';
 import * as S from './styles';
+import Typewriter from '../../components/typewriter';
 
 import avatar from '../../assets/img/eu (2).jpg';
 import Carousel from '../../components/carousel';
 import github from '../../assets/svg/github.svg';
 import linkedin from '../../assets/svg/linkedin.svg';
 import downloadAnimation from '../../assets/animations/download-animation.json';
-import Typewriter from '../../components/typewriter';
-import Tilt from 'react-parallax-tilt';
 
 const Hero = () => {
   return (
@@ -43,11 +43,16 @@ const Hero = () => {
           </ul>
         </S.TextHero>
         <S.ImageHero>
-          <div>
-            <Tilt tiltReverse>
-              <div className="shadow">
-                <img src={avatar} alt="FabricioMeneze5 img" />
-              </div>
+          <div className="shadow">
+            <Tilt
+              tiltReverse
+              scale={1.05}
+              glareEnable={true}
+              glareMaxOpacity={0.4}
+              glareColor="lightblue"
+              glarePosition="top"
+            >
+              <img src={avatar} alt="FabricioMeneze5 img" />
             </Tilt>
           </div>
         </S.ImageHero>

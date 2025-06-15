@@ -78,26 +78,21 @@ export const ImageHero = styled.div`
   width: 100%;
   height: 100%;
 
-  > div {
+  .shadow {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    box-shadow: ${(props) => props.theme.secundaryText} 0px 0px 50px 15px;
+    box-shadow: 0px 0px 30px 15px ${(props) => props.theme.mainTextColor};
 
-    .shadow {
+    img {
       width: 350px;
       height: 350px;
-      overflow: hidden;
       border-radius: 50%;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+      object-fit: cover;
+      border: ridge 5px ${(props) => props.theme.background1};
     }
   }
 `;
