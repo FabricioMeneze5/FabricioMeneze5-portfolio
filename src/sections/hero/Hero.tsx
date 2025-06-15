@@ -43,9 +43,13 @@ const Hero = () => {
           </ul>
         </S.TextHero>
         <S.ImageHero>
-          <Tilt tiltReverse perspective={3000}>
-            <img src={avatar} alt="FabricioMeneze5 img" />
-          </Tilt>
+          <div>
+            <Tilt tiltReverse>
+              <div className="shadow">
+                <img src={avatar} alt="FabricioMeneze5 img" />
+              </div>
+            </Tilt>
+          </div>
         </S.ImageHero>
       </S.HeroContent>
       <Carousel />

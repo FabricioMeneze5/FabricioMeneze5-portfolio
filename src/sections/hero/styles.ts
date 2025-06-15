@@ -74,15 +74,30 @@ export const TextHero = styled.div`
 
 export const ImageHero = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
 
-  img {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
+  > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
+    box-shadow: ${(props) => props.theme.secundaryText} 0px 0px 50px 15px;
+
+    .shadow {
+      width: 350px;
+      height: 350px;
+      overflow: hidden;
+      border-radius: 50%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
   }
 `;
