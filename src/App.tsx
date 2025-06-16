@@ -3,9 +3,9 @@ import { ThemeProvider } from 'styled-components';
 
 import Header from './sections/header';
 import Hero from './sections/hero';
+import Projects from './sections/projects';
 // import Contact from './sections/contact';
 // import Footer from './sections/footer';
-// import Projects from './sections/projects/Projects';
 // import Services from './sections/services/Services';
 
 import { GlobalStyle } from './style';
@@ -25,7 +25,8 @@ function App() {
         <GlobalStyle />
         <Header changeTheme={changeTheme} isDark={getTheme} />
         <Hero />
-        {/* <Projects />
+        <Projects />
+        {/*
         <Services />
         <Contact />
         <Footer /> */}

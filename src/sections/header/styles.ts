@@ -8,6 +8,7 @@ export const BgHeader = styled.div`
   background-color: ${(props) => props.theme.secundaryColor};
   position: sticky;
   top: 0px;
+  z-index: 1;
 `;
 
 export const ContainerHeader = styled.div`

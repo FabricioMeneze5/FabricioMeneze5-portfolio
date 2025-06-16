@@ -5,7 +5,7 @@ export const SectionHero = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 64px);
   background-color: ${(props) => props.theme.background1};
   position: relative;
