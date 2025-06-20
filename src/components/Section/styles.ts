@@ -4,7 +4,6 @@ export const Container = styled.div`
   width: 100%;
   height: calc(100vh - 64px);
   background-color: ${(props) => props.theme.background2};
-  overflow-y: hidden;
 `;
 
 export const Title = styled.div`

@@ -8,86 +8,136 @@ const Projects = () => {
   return (
     <Section title="Projects">
       <S.Cards>
-        <S.Card>
-          <img src={imagem} alt="img" />
-          <div>
-            <h3>Fitle</h3>
-            <div className="tags">
-              <p>TypeScripy</p>
-              <p>React</p>
-              <p>Redux</p>
-              <p>API</p>
+        <div>
+          <S.Card>
+            <img src={imagem} alt="img" />
+            <div>
+              <h3>Fitle</h3>
+              <div className="tags">
+                <p>TypeScripy</p>
+                <p>React</p>
+                <p>Redux</p>
+                <p>API</p>
+              </div>
+              <div className="btns">
+                <button type="button">View</button>
+                <button type="button">Code</button>
+              </div>
             </div>
-            <div className="btns">
-              <button type="button">View</button>
-              <button type="button">Code</button>
+          </S.Card>
+          <S.Card>
+            <img src={imagem} alt="img" />
+            <div>
+              <h3>Fitle</h3>
+              <div className="tags">
+                <p>TypeScripy</p>
+                <p>React</p>
+                <p>Redux</p>
+                <p>API</p>
+              </div>
+              <div className="btns">
+                <button type="button">View</button>
+                <button type="button">Code</button>
+              </div>
             </div>
-          </div>
-        </S.Card>
-        <S.Card>
-          <img src={imagem} alt="img" />
-          <div>
-            <h3>Fitle</h3>
-            <div className="tags">
-              <p>TypeScripy</p>
-              <p>React</p>
-              <p>Redux</p>
-              <p>API</p>
+          </S.Card>
+          <S.Card>
+            <img src={imagem} alt="img" />
+            <div>
+              <h3>Fitle</h3>
+              <div className="tags">
+                <p>TypeScripy</p>
+                <p>React</p>
+                <p>Redux</p>
+                <p>API</p>
+              </div>
+              <div className="btns">
+                <button type="button">View</button>
+                <button type="button">Code</button>
+              </div>
             </div>
-            <div className="btns">
-              <button type="button">View</button>
-              <button type="button">Code</button>
+          </S.Card>
+          <S.Card>
+            <img src={imagem} alt="img" />
+            <div>
+              <h3>Fitle</h3>
+              <div className="tags">
+                <p>TypeScripy</p>
+                <p>React</p>
+                <p>Redux</p>
+                <p>API</p>
+              </div>
+              <div className="btns">
+                <button type="button">View</button>
+                <button type="button">Code</button>
+              </div>
             </div>
-          </div>
-        </S.Card>
-        <S.Card>
-          <img src={imagem} alt="img" />
-          <div>
-            <h3>Fitle</h3>
-            <div className="tags">
-              <p>TypeScripy</p>
-              <p>React</p>
-              <p>Redux</p>
-              <p>API</p>
+          </S.Card>
+          <S.Card>
+            <img src={imagem} alt="img" />
+            <div>
+              <h3>Fitle</h3>
+              <div className="tags">
+                <p>TypeScripy</p>
+                <p>React</p>
+                <p>Redux</p>
+                <p>API</p>
+              </div>
+              <div className="btns">
+                <button type="button">View</button>
+                <button type="button">Code</button>
+              </div>
             </div>
-            <div className="btns">
-              <button type="button">View</button>
-              <button type="button">Code</button>
+          </S.Card>
+          <S.Card>
+            <img src={imagem} alt="img" />
+            <div>
+              <h3>Fitle</h3>
+              <div className="tags">
+                <p>TypeScripy</p>
+                <p>React</p>
+                <p>Redux</p>
+                <p>API</p>
+              </div>
+              <div className="btns">
+                <button type="button">View</button>
+                <button type="button">Code</button>
+              </div>
             </div>
-          </div>
-        </S.Card>
-        <S.Card>
-          <img src={imagem} alt="img" />
-          <div>
-            <h3>Fitle</h3>
-            <div className="tags">
-              <p>TypeScripy</p>
-              <p>React</p>
-              <p>Redux</p>
-              <p>API</p>
+          </S.Card>
+          <S.Card>
+            <img src={imagem} alt="img" />
+            <div>
+              <h3>Fitle</h3>
+              <div className="tags">
+                <p>TypeScripy</p>
+                <p>React</p>
+                <p>Redux</p>
+                <p>API</p>
+              </div>
+              <div className="btns">
+                <button type="button">View</button>
+                <button type="button">Code</button>
+              </div>
             </div>
-            <div className="btns">
-              <button type="button">View</button>
-              <button type="button">Code</button>
+          </S.Card>
+          <S.Card>
+            <img src={imagem} alt="img" />
+            <div>
+              <h3>Fitle</h3>
+              <div className="tags">
+                <p>TypeScripy</p>
+                <p>React</p>
+                <p>Redux</p>
+                <p>API</p>
+              </div>
+              <div className="btns">
+                <button type="button">View</button>
+                <button type="button">Code</button>
+              </div>
             </div>
-          </div>
-        </S.Card>
-        <S.Card>
-          <img src={imagem} alt="img" />
-          <div>
-            <h3>Fitle</h3>
-            <div className="tags">
-              <p>TypeScripy</p>
-              <p>React</p>
-              <p>Redux</p>
-              <p>API</p>
-            </div>
-            <div className="btns">
-              <button type="button">View</button>
-              <button type="button">Code</button>
-            </div>
-          </div>
-        </S.Card>
+          </S.Card>
+        </div>
       </S.Cards>
     </Section>
   );
