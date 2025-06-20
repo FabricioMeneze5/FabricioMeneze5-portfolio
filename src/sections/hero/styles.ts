@@ -37,6 +37,7 @@ export const TextHero = styled.div`
     font-family: 'Aldrich', sans-serif;
     font-size: 64px;
     line-height: 50px;
+    user-select: none;
   }
 
   > p:nth-of-type(2) {

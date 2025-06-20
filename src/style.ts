@@ -21,5 +21,6 @@ export const GlobalStyle = createGlobalStyle`
 
   img {
     pointer-events: none;
+    user-select: none;
   }
 `;

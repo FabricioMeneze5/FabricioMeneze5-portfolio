@@ -1,8 +1,5 @@
 import styled from 'styled-components';
 
-// user-select: none;
-// pointer-events: none;
-
 export const Cards = styled.ul`
   overflow-y: auto;
   height: 100%;
@@ -57,24 +54,6 @@ export const Card = styled.li`
     height: 230px;
     width: 100%;
     object-fit: cover;
-  }
-
-  .tags {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 4px 0;
-    height: 50px;
-
-    p {
-      font-size: 10px;
-      color: #fff;
-      background-color: blueviolet;
-      margin: 2px;
-      border-radius: 10px;
-      padding: 2px 10px;
-    }
   }
 
   .btns {

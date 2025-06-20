@@ -40,6 +40,7 @@ export const TextStyle = styled.div`
     display: block;
     width: 0;
     text-align: justify;
+    user-select: none;
   }
 
   p:nth-of-type(1) {
