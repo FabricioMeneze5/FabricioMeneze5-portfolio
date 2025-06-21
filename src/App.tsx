@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 
-import Header from './sections/header';
-import Hero from './sections/hero';
-import Projects from './sections/projects';
+import Header from './sections/Header';
+import Hero from './sections/Hero';
+import Projects from './sections/Projects';
+import Services from './sections/ServicesSec';
 // import Contact from './sections/contact';
 // import Footer from './sections/footer';
-// import Services from './sections/services/Services';
 
 import { GlobalStyle } from './style';
 import themeLight from './themes/light';
@@ -26,8 +26,8 @@ function App() {
         <Header changeTheme={changeTheme} isDark={getTheme} />
         <Hero />
         <Projects />
-        {/*
         <Services />
+        {/*
         <Contact />
         <Footer /> */}
       </ThemeProvider>

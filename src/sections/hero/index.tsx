@@ -1,9 +1,9 @@
 import Tilt from 'react-parallax-tilt';
 import * as S from './styles';
-import Typewriter from '../../components/typewriter';
+import Typewriter from '../../components/Typewriter';
 
 import avatar from '../../assets/img/eu (2).jpg';
-import Slide from '../../components/slide';
+import Slide from '../../components/Slide';
 import github from '../../assets/svg/github.svg';
 import linkedin from '../../assets/svg/linkedin.svg';
 import downloadAnimation from '../../assets/animations/download-animation.json';
