@@ -21,6 +21,61 @@ const Projects = () => {
               </div>
             </div>
           </S.Card>
+          <S.Card>
+            <img src={imagem} alt="img" />
+            <div>
+              <h3>Fitle</h3>
+              <Tags />
+              <div className="btns">
+                <button type="button">View</button>
+                <button type="button">Code</button>
+              </div>
+            </div>
+          </S.Card>
+          <S.Card>
+            <img src={imagem} alt="img" />
+            <div>
+              <h3>Fitle</h3>
+              <Tags />
+              <div className="btns">
+                <button type="button">View</button>
+                <button type="button">Code</button>
+              </div>
+            </div>
+          </S.Card>
+          <S.Card>
+            <img src={imagem} alt="img" />
+            <div>
+              <h3>Fitle</h3>
+              <Tags />
+              <div className="btns">
+                <button type="button">View</button>
+                <button type="button">Code</button>
+              </div>
+            </div>
+          </S.Card>
+          <S.Card>
+            <img src={imagem} alt="img" />
+            <div>
+              <h3>Fitle</h3>
+              <Tags />
+              <div className="btns">
+                <button type="button">View</button>
+                <button type="button">Code</button>
+              </div>
+            </div>
+          </S.Card>
+          <S.Card>
+            <img src={imagem} alt="img" />
+            <div>
+              <h3>Fitle</h3>
+              <Tags />
+              <div className="btns">
+                <button type="button">View</button>
+                <button type="button">Code</button>
+              </div>
+            </div>
+          </S.Card>
         </div>
       </S.Cards>
     </Section>

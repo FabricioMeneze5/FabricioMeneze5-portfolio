@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Cards = styled.ul`
   overflow-y: auto;
   height: 100%;
-  padding-bottom: 5px;
   scrollbar-width: none;
 
   &::-webkit-scrollbar {
@@ -14,7 +13,7 @@ export const Cards = styled.ul`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 35px;
-    padding: 5px;
+    padding: 5px 5px 15px;
     overflow-y: hidden;
   }
 `;
@@ -35,7 +34,7 @@ export const Card = styled.li`
 
   &:hover {
     transform: scale(1.02);
-    box-shadow: 3px 3px 1px 2px black;
+    box-shadow: 5px 5px 1px 2px black;
     border: solid 3px ${(props) => props.theme.mainColor};
   }
 
