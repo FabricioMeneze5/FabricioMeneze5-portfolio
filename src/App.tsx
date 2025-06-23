@@ -5,7 +5,7 @@ import Header from './sections/Header';
 import Hero from './sections/Hero';
 import Projects from './sections/Projects';
 import Services from './sections/ServicesSec';
-// import Contact from './sections/contact';
+import Contact from './sections/Contact';
 // import Footer from './sections/footer';
 
 import { GlobalStyle } from './style';
@@ -27,8 +27,8 @@ function App() {
         <Hero />
         <Projects />
         <Services />
-        {/*
         <Contact />
+        {/*
         <Footer /> */}
       </ThemeProvider>
     </>
