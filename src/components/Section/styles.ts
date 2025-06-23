@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
-  height: calc(100vh - 64px);
+  height: calc(100vh - 44px);
+  padding: 10px 0;
   background-color: ${(props) => props.theme.background2};
 `;
 
@@ -13,6 +14,7 @@ export const Title = styled.div`
   width: 100%;
   height: 64px;
   font-size: 24px;
+  margin-bottom: 10px;
 
   h2 {
     font-family: 'Aldrich', sans-serif;

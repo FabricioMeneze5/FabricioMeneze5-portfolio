@@ -2,7 +2,6 @@ import * as S from './styles';
 
 import Section from '../../components/Section';
 
-import imagem from '../../assets/img/landingPages.jpeg';
 import Tags from '../../components/Tags';
 
 const Projects = () => {
@@ -11,7 +10,7 @@ const Projects = () => {
       <S.Cards>
         <div>
           <S.Card>
-            <img src={imagem} alt="img" />
+            <img src="https://picsum.photos/500?random=1" alt="img" />
             <div>
               <h3>Fitle</h3>
               <Tags />
@@ -22,7 +21,7 @@ const Projects = () => {
             </div>
           </S.Card>
           <S.Card>
-            <img src={imagem} alt="img" />
+            <img src="https://picsum.photos/500?random=2" alt="img" />
             <div>
               <h3>Fitle</h3>
               <Tags />
@@ -33,7 +32,7 @@ const Projects = () => {
             </div>
           </S.Card>
           <S.Card>
-            <img src={imagem} alt="img" />
+            <img src="https://picsum.photos/500?random=3" alt="img" />
             <div>
               <h3>Fitle</h3>
               <Tags />
@@ -44,7 +43,7 @@ const Projects = () => {
             </div>
           </S.Card>
           <S.Card>
-            <img src={imagem} alt="img" />
+            <img src="https://picsum.photos/500?random=4" alt="img" />
             <div>
               <h3>Fitle</h3>
               <Tags />
@@ -55,7 +54,7 @@ const Projects = () => {
             </div>
           </S.Card>
           <S.Card>
-            <img src={imagem} alt="img" />
+            <img src="https://picsum.photos/500?random=5" alt="img" />
             <div>
               <h3>Fitle</h3>
               <Tags />
@@ -66,7 +65,7 @@ const Projects = () => {
             </div>
           </S.Card>
           <S.Card>
-            <img src={imagem} alt="img" />
+            <img src="https://picsum.photos/500?random=6" alt="img" />
             <div>
               <h3>Fitle</h3>
               <Tags />
