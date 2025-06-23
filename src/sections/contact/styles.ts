@@ -1,25 +1,28 @@
 import styled from 'styled-components';
 
 export const ContactContainer = styled.div`
-  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  background-color: ${(props) => props.theme.secundaryText};
   padding: 20px;
-  height: 100%;
-  margin-bottom: 10px;
+  height: 500px;
+  overflow-y: hidden;
 
   h3 {
-    display: block;
     text-align: center;
     padding-bottom: 20px;
+    font-size: 24px;
   }
 
   > div {
     display: flex;
     gap: 20px;
+    height: calc(100% - 51px);
 
     img {
       width: 100%;
-      max-width: calc(50%);
       height: 100%;
+      max-width: calc(50%);
     }
 
     form {
@@ -30,15 +33,22 @@ export const ContactContainer = styled.div`
 `;
 
 export const Form = styled.form`
-  border: solid 1px black;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  /* border: solid 1px black; */
   text-align: center;
 
   div {
-    display: block;
     width: 100%;
-    margin-bottom: 20px;
-    text-align: start;
   }
+`;
+
+export const InputGroup = styled.div`
+  display: block;
+  margin-bottom: 20px;
+  text-align: start;
 
   label {
     display: block;
@@ -52,5 +62,6 @@ export const Form = styled.form`
 
   textarea {
     resize: none;
+    height: 96px;
   }
 `;

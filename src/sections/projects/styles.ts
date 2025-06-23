@@ -26,6 +26,7 @@ export const Card = styled.li`
   width: 100%;
   max-width: 309px;
   height: auto;
+  padding-bottom: 14px;
   border-radius: 20px;
   border: solid 3px white;
   overflow: hidden;

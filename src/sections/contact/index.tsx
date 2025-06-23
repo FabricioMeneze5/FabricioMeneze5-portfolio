@@ -12,20 +12,22 @@ const Contact = () => {
           <img src="https://picsum.photos/900" alt="ants" />
           <S.Form>
             <div>
-              <label htmlFor="name">Name / Company</label>
-              <input type="text" id="name" />
-            </div>
-            <div>
-              <label htmlFor="email">Email</label>
-              <input type="email" id="email" />
-            </div>
-            <div>
-              <label htmlFor="phone">Phone</label>
-              <input type="text" id="phone" />
-            </div>
-            <div>
-              <label htmlFor="message">Message</label>
-              <textarea id="message" />
+              <S.InputGroup>
+                <label htmlFor="name">Name / Company</label>
+                <input type="text" id="name" />
+              </S.InputGroup>
+              <S.InputGroup>
+                <label htmlFor="email">Email</label>
+                <input type="email" id="email" />
+              </S.InputGroup>
+              <S.InputGroup>
+                <label htmlFor="phone">Phone</label>
+                <input type="text" id="phone" />
+              </S.InputGroup>
+              <S.InputGroup>
+                <label htmlFor="message">Message</label>
+                <textarea id="message" />
+              </S.InputGroup>
             </div>
             <Button type="submit">Send</Button>
           </S.Form>
