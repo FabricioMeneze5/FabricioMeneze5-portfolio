@@ -3,6 +3,7 @@ import * as S from './styles';
 import Section from '../../components/Section';
 
 import Tags from '../../components/Tags';
+import Button from '../../components/Button';
 
 const Projects = () => {
   return (
@@ -15,8 +16,8 @@ const Projects = () => {
               <h3>Fitle</h3>
               <Tags />
               <div className="btns">
-                <button type="button">View</button>
-                <button type="button">Code</button>
+                <Button type="button">View</Button>
+                <Button type="button">Code</Button>
               </div>
             </div>
           </S.Card>
@@ -26,8 +27,8 @@ const Projects = () => {
               <h3>Fitle</h3>
               <Tags />
               <div className="btns">
-                <button type="button">View</button>
-                <button type="button">Code</button>
+                <Button type="button">View</Button>
+                <Button type="button">Code</Button>
               </div>
             </div>
           </S.Card>
@@ -37,8 +38,8 @@ const Projects = () => {
               <h3>Fitle</h3>
               <Tags />
               <div className="btns">
-                <button type="button">View</button>
-                <button type="button">Code</button>
+                <Button type="button">View</Button>
+                <Button type="button">Code</Button>
               </div>
             </div>
           </S.Card>
@@ -48,8 +49,8 @@ const Projects = () => {
               <h3>Fitle</h3>
               <Tags />
               <div className="btns">
-                <button type="button">View</button>
-                <button type="button">Code</button>
+                <Button type="button">View</Button>
+                <Button type="button">Code</Button>
               </div>
             </div>
           </S.Card>
@@ -59,8 +60,8 @@ const Projects = () => {
               <h3>Fitle</h3>
               <Tags />
               <div className="btns">
-                <button type="button">View</button>
-                <button type="button">Code</button>
+                <Button type="button">View</Button>
+                <Button type="button">Code</Button>
               </div>
             </div>
           </S.Card>
@@ -70,8 +71,8 @@ const Projects = () => {
               <h3>Fitle</h3>
               <Tags />
               <div className="btns">
-                <button type="button">View</button>
-                <button type="button">Code</button>
+                <Button type="button">View</Button>
+                <Button type="button">Code</Button>
               </div>
             </div>
           </S.Card>

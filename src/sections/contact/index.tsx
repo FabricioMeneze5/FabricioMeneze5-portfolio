@@ -1,3 +1,4 @@
+import Button from '../../components/Button';
 import Section from '../../components/Section';
 
 import * as S from './styles';
@@ -26,7 +27,7 @@ const Contact = () => {
               <label htmlFor="message">Message</label>
               <textarea id="message" />
             </div>
-            <button type="submit">Send</button>
+            <Button type="submit">Send</Button>
           </S.Form>
         </div>
       </S.ContactContainer>
