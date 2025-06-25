@@ -6,7 +6,7 @@ import Hero from './sections/Hero';
 import Projects from './sections/Projects';
 import Services from './sections/ServicesSec';
 import Contact from './sections/Contact';
-// import Footer from './sections/footer';
+import Footer from './sections/Footer';
 
 import { GlobalStyle } from './style';
 import themeLight from './themes/light';
@@ -28,8 +28,8 @@ function App() {
         <Projects />
         <Services />
         <Contact />
-        {/*
-        <Footer /> */}
+
+        <Footer />
       </ThemeProvider>
     </>
   );

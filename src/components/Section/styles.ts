@@ -5,6 +5,9 @@ export const Container = styled.div`
   height: calc(100vh - 44px);
   padding: 10px 0;
   background-color: ${(props) => props.theme.background2};
+
+  /* teste */
+  border-top: 1px solid ${(props) => props.theme.mainTextColor};
 `;
 
 export const Title = styled.div`
