@@ -58,5 +58,3 @@ export const TextStyle = styled.div`
       ${cursorB} 0.6s step-end 3.3s infinite normal backwards;
   }
 `;
-
-//anima: 1[nome] 2[duração] 3[progreção] 4[delay] 5[repetição] 6[direção] 7[inicio-fim] 8[play-state];

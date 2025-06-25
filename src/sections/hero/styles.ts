@@ -59,7 +59,6 @@ export const TextHero = styled.div`
       justify-content: center;
       border-radius: 50%;
     }
-
     li:nth-child(2) {
       border-radius: 50%;
     }
@@ -69,6 +68,10 @@ export const TextHero = styled.div`
       height: 64px;
       width: 64px;
       overflow: hidden;
+    }
+
+    a {
+      display: block;
     }
   }
 `;

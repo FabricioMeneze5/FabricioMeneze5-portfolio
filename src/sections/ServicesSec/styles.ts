@@ -41,7 +41,7 @@ export const ServiceCard = styled.div`
     p {
       flex: 1;
       text-align: center;
-      color: white;
+      color: ${(props) => props.theme.mainTextColor};
       font-size: 18px;
       font-weight: light;
       font-style: italic;
