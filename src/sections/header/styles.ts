@@ -6,9 +6,10 @@ type Props = {
 
 export const BgHeader = styled.div`
   background-color: ${(props) => props.theme.secundaryColor};
-  position: sticky;
+  position: fixed;
   top: 0px;
   z-index: 1;
+  width: 100%;
 `;
 
 export const ContainerHeader = styled.div`
@@ -19,15 +20,18 @@ export const ContainerHeader = styled.div`
   height: 64px;
 
   h1 {
-    font-size: 24px;
-    font-weight: lighter;
-    font-style: italic;
-    color: ${(props) => props.theme.mainColor};
-    cursor: pointer;
+    a {
+      text-decoration: none;
+      color: ${(props) => props.theme.mainColor};
+      font-size: 24px;
+      font-weight: lighter;
+      font-style: italic;
+    }
 
     b {
       color: ${(props) => props.theme.mainTextColor};
       margin-right: 5px;
+      font-size: 24px;
     }
   }
 `;
@@ -39,7 +43,11 @@ export const NavBar = styled.ul`
 
   li {
     margin-left: 12px;
-    cursor: pointer;
+
+    a {
+      text-decoration: none;
+      color: ${(props) => props.theme.mainTextColor};
+    }
   }
 `;
 

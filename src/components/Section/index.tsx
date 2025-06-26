@@ -1,13 +1,15 @@
 import * as S from './styles';
 
-type Props = {
+export type Props = {
+  id: string;
   title: string;
+  background: 'bg1' | 'bg2';
   children: React.ReactElement;
 };
 
-const Section = ({ title, children }: Props) => {
+const Section = ({ title, children, id, background }: Props) => {
   return (
-    <S.Container id="projects">
+    <S.Container id={id} background={background}>
       <S.Title>
         <b>##</b>
         <h2>{title}</h2>

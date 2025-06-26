@@ -10,13 +10,20 @@ const Header = ({ isDark, changeTheme }: Props) => {
     <BgHeader id="header">
       <ContainerHeader className="container">
         <h1>
-          <b>#</b>FabricioMeneze5
+          <b>#</b>
+          <a href="#hero">FabricioMeneze5</a>
         </h1>
         <NavBar>
-          <li>Projects</li>
-          <li>Services</li>
           <li>
-            <b>Contact</b>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#services">Services</a>
+          </li>
+          <li>
+            <b>
+              <a href="#contact">Contact</a>
+            </b>
           </li>
           <li>Pt/En</li>
           <li>

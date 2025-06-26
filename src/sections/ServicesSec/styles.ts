@@ -6,8 +6,7 @@ export const ServicesCont = styled.div`
   gap: 40px;
   justify-items: center;
   width: 100%;
-  height: 100%;
-  padding: 0px 10px 10px;
+  padding: 10px 0;
 `;
 
 export const ServiceCard = styled.div`

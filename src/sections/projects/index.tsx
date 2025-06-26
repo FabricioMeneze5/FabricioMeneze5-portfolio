@@ -7,7 +7,7 @@ import Button from '../../components/Button';
 
 const Projects = () => {
   return (
-    <Section title="Projects">
+    <Section title="Projects" id="projects" background="bg2">
       <S.Cards>
         <div>
           <S.Card>

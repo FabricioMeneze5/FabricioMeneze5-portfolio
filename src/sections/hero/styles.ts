@@ -6,15 +6,16 @@ export const SectionHero = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: calc(100vh - 64px);
+  height: 100vh;
   background-color: ${(props) => props.theme.background1};
   position: relative;
+  padding-bottom: 64px;
 `;
 
 export const HeroContent = styled.div`
   display: flex;
   align-items: center;
-  padding-bottom: 74px;
+  width: 100%;
 `;
 
 export const LottieIcon = styled(Lottie)`

@@ -8,7 +8,7 @@ import imgMaintaince from '../../assets/img/maintaince2.jpeg';
 
 const Services = () => {
   return (
-    <Section title="Services">
+    <Section title="Services" id="services" background="bg1">
       <S.ServicesCont>
         <S.ServiceCard>
           <h3>📱 Landing Pages</h3>
