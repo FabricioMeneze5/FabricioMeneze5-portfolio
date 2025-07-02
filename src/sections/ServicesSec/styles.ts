@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ServicesCont = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 30px;
   justify-items: center;
   width: 100%;
   padding: 10px 0;
@@ -15,7 +15,18 @@ export const ServiceCard = styled.div`
   padding: 10px;
   height: 264px;
   width: 100%;
-  border: 1px solid ${(props) => props.theme.mainTextColor};
+  background-color: ${(props) => props.theme.background1};
+  border: 1px solid ${(props) => props.theme.mainColor};
+  box-shadow: inset 0 0 0 0 ${(props) => props.theme.secundaryColor};
+  transition: transform 0.3s ease-out;
+
+  &:hover {
+    transform: scale(1.04);
+    box-shadow: inset 100vw 0 0 0 ${(props) => props.theme.secundaryColor};
+    transition:
+      transform 0.3s ease,
+      box-shadow 1s ease-out;
+  }
 
   h3 {
     display: block;
