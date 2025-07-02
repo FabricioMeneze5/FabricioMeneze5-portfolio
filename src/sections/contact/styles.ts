@@ -7,6 +7,7 @@ export const ContactContainer = styled.div`
   padding: 20px;
   height: 500px;
   overflow-y: hidden;
+  color: ${(props) => props.theme.secundaryColor};
 
   h3 {
     text-align: center;
@@ -37,7 +38,6 @@ export const Form = styled.form`
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  /* border: solid 1px black; */
   text-align: center;
 
   div {
