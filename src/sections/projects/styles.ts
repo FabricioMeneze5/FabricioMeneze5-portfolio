@@ -27,7 +27,7 @@ export const Card = styled.li`
   max-width: 309px;
   height: auto;
   padding-bottom: 14px;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   border: solid 3px white;
   overflow: hidden;
   background-color: ${(props) => props.theme.secundaryText};

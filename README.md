@@ -1,4 +1,3 @@
-- hover do service
 - definer services finais e textos
 - preparar fotos
 - definir cores definitivas
@@ -13,6 +12,7 @@
 
 Fabricio Meneze5 portfolio
 
+OK - hover do service
 OK - links do hero com bug
 OK - footer
 OK - rolamento da pagina para as sections e footer

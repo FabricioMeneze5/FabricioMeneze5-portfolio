@@ -15,16 +15,16 @@ export const ServiceCard = styled.div`
   padding: 10px;
   height: 264px;
   width: 100%;
-  background-color: ${(props) => props.theme.background1};
+  background-color: ${(props) => props.theme.secundaryColor};
   border: 1px solid ${(props) => props.theme.mainColor};
-  box-shadow: inset 0 0 0 0 ${(props) => props.theme.secundaryColor};
+  box-shadow: inset 0 0 0 0 ${(props) => props.theme.background2};
   transition: transform 0.3s ease-out;
 
   &:hover {
     transform: scale(1.04);
-    box-shadow: inset 100vw 0 0 0 ${(props) => props.theme.secundaryColor};
+    box-shadow: inset 100vw 0 0 0 ${(props) => props.theme.background2};
     transition:
-      transform 0.3s ease,
+      transform 0.3s ease-out,
       box-shadow 1s ease-out;
   }
 
