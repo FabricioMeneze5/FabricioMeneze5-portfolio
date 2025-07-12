@@ -1,10 +1,10 @@
 import * as S from './styles';
 
 import Section from '../../components/Section';
-import imgLandingPages from '../../assets/img/landingPages.jpeg';
-import imgEcommerce from '../../assets/img/ecommerce.jpeg';
-import imgApp from '../../assets/img/app.jpeg';
-import imgMaintaince from '../../assets/img/maintaince2.jpeg';
+import imgLandingPages from '../../assets/img/landing.png';
+import imgEcommerce from '../../assets/img/ecommerce.png';
+import imgApp from '../../assets/img/App.png';
+import imgMaintaince from '../../assets/img/maintaince.png';
 
 const Services = () => {
   return (

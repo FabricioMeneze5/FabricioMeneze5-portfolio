@@ -10,7 +10,7 @@
 - refazer curriculo
 - criar o readMe
 
-Fabricio Meneze5 portfolio
+Fabricio Meneze5 portfolio-
 
 OK - hover do service
 OK - links do hero com bug

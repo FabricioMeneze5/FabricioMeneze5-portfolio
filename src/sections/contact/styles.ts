@@ -24,6 +24,7 @@ export const ContactContainer = styled.div`
       width: 100%;
       height: 100%;
       max-width: calc(50%);
+      object-fit: cover;
     }
 
     form {

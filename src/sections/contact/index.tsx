@@ -1,6 +1,8 @@
 import Button from '../../components/Button';
 import Section from '../../components/Section';
 
+import ImageForm from '../../assets/img/workTogether.png';
+
 import * as S from './styles';
 
 const Contact = () => {
@@ -9,7 +11,7 @@ const Contact = () => {
       <S.ContactContainer>
         <h3>let&apos;s work together</h3>
         <div>
-          <img src="https://picsum.photos/900" alt="ants" />
+          <img src={ImageForm} alt="ants" />
           <S.Form>
             <div>
               <S.InputGroup>
