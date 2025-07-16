@@ -27,16 +27,15 @@ export const Card = styled.li`
   max-width: 309px;
   height: auto;
   padding-bottom: 14px;
-  /* border-radius: 20px; */
-  border: solid 3px white;
   overflow: hidden;
-  background-color: ${(props) => props.theme.secundaryText};
+  background-color: ${(props) => props.theme.secundaryColor};
+  border: solid 2px ${(props) => props.theme.mainColor};
   transition: 0.3s ease;
 
   &:hover {
     transform: scale(1.02);
     box-shadow: 5px 5px 1px 2px black;
-    border: solid 3px ${(props) => props.theme.mainColor};
+    border: solid 2px ${(props) => props.theme.secundaryText};
   }
 
   > div {

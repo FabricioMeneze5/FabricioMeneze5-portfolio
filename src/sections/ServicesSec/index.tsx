@@ -14,7 +14,10 @@ const Services = () => {
           <h3>📱 Landing Pages</h3>
           <div>
             <img src={imgLandingPages} alt="img" />
-            <p>Criadas para converter visitantes em clientes, rápidas e responsivas.</p>
+            <p>
+              Páginas rápidas, responsivas e com foco em destacar seu serviço ou produto com clareza
+              e impacto.
+            </p>
           </div>
         </S.ServiceCard>
 
@@ -22,15 +25,21 @@ const Services = () => {
           <h3>🛒 E-commerce</h3>
           <div>
             <img src={imgEcommerce} alt="img" />
-            <p>Venda seus produtos online com sistemas prontos e customizáveis.</p>
+            <p>
+              Lojas virtuais completas, prontas pra vender: carrinho, pagamento, cadastro de
+              produtos e layout adaptado ao seu negócio.
+            </p>
           </div>
         </S.ServiceCard>
 
         <S.ServiceCard>
-          <h3>📲 Apps</h3>
+          <h3>🧩 Web Apps Interativas</h3>
           <div>
             <img src={imgApp} alt="img" />
-            <p>Seu site travado ou dando erro? Eu resolvo.</p>
+            <p>
+              Ferramentas e interfaces dinâmicas sob medida pro seu negócio, pensadas para engajar e
+              proporcionar interações ricas.
+            </p>
           </div>
         </S.ServiceCard>
 
@@ -39,8 +48,8 @@ const Services = () => {
           <div>
             <img src={imgMaintaince} alt="img" />
             <p>
-              Atualização de textos, imagens, preços e informações no seu site sempre que você
-              precisar.
+              Atualização de textos, imagens, preços, seções e funcionalidades. Seu site sempre em
+              dia, sem complicação.
             </p>
           </div>
         </S.ServiceCard>

@@ -3,11 +3,12 @@ import styled from 'styled-components';
 export const ContactContainer = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: ${(props) => props.theme.secundaryText};
+  background-color: ${(props) => props.theme.secundaryColor};
+  border: 1px solid ${(props) => props.theme.mainColor};
   padding: 20px;
   height: 500px;
   overflow-y: hidden;
-  color: ${(props) => props.theme.secundaryColor};
+  color: ${(props) => props.theme.mainTextColor};
 
   h3 {
     text-align: center;

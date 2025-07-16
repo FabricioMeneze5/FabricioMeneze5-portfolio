@@ -1,5 +1,4 @@
 - definer services finais e textos
-- preparar fotos
 - definir cores definitivas
 - layout para telas menores
 - implementar API
@@ -12,6 +11,7 @@
 
 Fabricio Meneze5 portfolio-
 
+OK - preparar fotos
 OK - hover do service
 OK - links do hero com bug
 OK - footer

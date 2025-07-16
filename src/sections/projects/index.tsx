@@ -13,7 +13,7 @@ const Projects = () => {
           <S.Card>
             <img src="https://picsum.photos/500?random=1" alt="img" />
             <div>
-              <h3>Fitle</h3>
+              <h3>Title</h3>
               <Tags />
               <div className="btns">
                 <Button type="button">View</Button>
@@ -24,7 +24,7 @@ const Projects = () => {
           <S.Card>
             <img src="https://picsum.photos/500?random=2" alt="img" />
             <div>
-              <h3>Fitle</h3>
+              <h3>Title</h3>
               <Tags />
               <div className="btns">
                 <Button type="button">View</Button>
@@ -35,7 +35,7 @@ const Projects = () => {
           <S.Card>
             <img src="https://picsum.photos/500?random=3" alt="img" />
             <div>
-              <h3>Fitle</h3>
+              <h3>Title</h3>
               <Tags />
               <div className="btns">
                 <Button type="button">View</Button>
@@ -46,7 +46,7 @@ const Projects = () => {
           <S.Card>
             <img src="https://picsum.photos/500?random=4" alt="img" />
             <div>
-              <h3>Fitle</h3>
+              <h3>Title</h3>
               <Tags />
               <div className="btns">
                 <Button type="button">View</Button>
@@ -57,7 +57,7 @@ const Projects = () => {
           <S.Card>
             <img src="https://picsum.photos/500?random=5" alt="img" />
             <div>
-              <h3>Fitle</h3>
+              <h3>Title</h3>
               <Tags />
               <div className="btns">
                 <Button type="button">View</Button>
@@ -68,7 +68,7 @@ const Projects = () => {
           <S.Card>
             <img src="https://picsum.photos/500?random=6" alt="img" />
             <div>
-              <h3>Fitle</h3>
+              <h3>Title</h3>
               <Tags />
               <div className="btns">
                 <Button type="button">View</Button>
