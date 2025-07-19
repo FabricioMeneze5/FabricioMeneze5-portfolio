@@ -34,8 +34,8 @@ export const Card = styled.li`
 
   &:hover {
     transform: scale(1.02);
-    box-shadow: 5px 5px 1px 2px black;
-    border: solid 2px ${(props) => props.theme.secundaryText};
+    box-shadow: 5px 5px 1px 1px ${(props) => props.theme.mainTextColor};
+    border: solid 2px black;
   }
 
   > div {

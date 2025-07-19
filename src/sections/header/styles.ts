@@ -10,6 +10,12 @@ export const BgHeader = styled.div`
   top: 0px;
   z-index: 1;
   width: 100%;
+  box-shadow: 0 -3px 10px ${(props) => props.theme.mainColor};
+  transition: 0.3s ease-out;
+
+  &:hover {
+    box-shadow: 0 1px 10px ${(props) => props.theme.mainColor};
+  }
 `;
 
 export const ContainerHeader = styled.div`
@@ -56,7 +62,7 @@ export const ToggleBtn = styled.div<Props>`
   width: 50px;
   height: 24px;
   border-radius: 12px;
-  background-color: ${(props) => props.theme.secundaryText};
+  background-color: ${(props) => props.theme.mainTextColor};
   cursor: pointer;
   position: relative;
   transition: all 0.3s ease;

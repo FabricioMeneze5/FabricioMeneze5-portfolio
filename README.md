@@ -1,5 +1,3 @@
-- definer services finais e textos
-- definir cores definitivas
 - layout para telas menores
 - implementar API
 - modal dos projetos
@@ -11,6 +9,8 @@
 
 Fabricio Meneze5 portfolio-
 
+OK - definir cores definitivas
+OK - definer services finais e textos
 OK - preparar fotos
 OK - hover do service
 OK - links do hero com bug

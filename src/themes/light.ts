@@ -1,10 +1,9 @@
 const themeLight = {
   mainColor: '#1E88E5',
-  secundaryColor: '#CFCFD8',
-  background1: '#F5F5F5',
-  background2: '#EEEEEE',
+  secundaryColor: '#C7C7C7',
+  background1: '#FAFAFA',
+  background2: '#F0F0F0',
   mainTextColor: '#333333',
-  secundaryText: '#222222',
 };
 
 export default themeLight;
