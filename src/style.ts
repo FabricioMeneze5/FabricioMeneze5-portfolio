@@ -1,5 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 
+export const breakpoints = {
+  desktop: '1023px',
+  mobile: '639px',
+};
+
 export const GlobalStyle = createGlobalStyle`
   html {
     scroll-behavior: smooth;
@@ -17,6 +22,13 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
+    overflow: hidden;
+    border-left: 1px solid green;
+    border-right: 1px solid green;
+
+    @media (max-width: ${breakpoints.mobile}) {
+      max-width: 90%;
+    }
   }
 
   h1 {

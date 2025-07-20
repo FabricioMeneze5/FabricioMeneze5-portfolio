@@ -1,4 +1,4 @@
-import Tilt from 'react-parallax-tilt';
+// import Tilt from 'react-parallax-tilt';
 import * as S from './styles';
 import Typewriter from '../../components/Typewriter';
 
@@ -43,19 +43,10 @@ const Hero = () => {
           </ul>
         </S.TextHero>
         <S.ImageHero>
-          <div className="shadow">
-            <Tilt
-              tiltReverse
-              scale={1.05}
-              glareEnable={true}
-              glareMaxOpacity={0.4}
-              glareColor="lightblue"
-              glarePosition="top"
-              glareBorderRadius="200px"
-            >
-              <img src={avatar} alt="FabricioMeneze5 img" />
-            </Tilt>
-          </div>
+          <div className="shadow" />
+          <S.TiltImg>
+            <img src={avatar} alt="FabricioMeneze5 img" />
+          </S.TiltImg>
         </S.ImageHero>
       </S.HeroContent>
       <Slide />

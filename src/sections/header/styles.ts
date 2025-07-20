@@ -9,7 +9,7 @@ export const BgHeader = styled.div`
   position: fixed;
   top: 0px;
   z-index: 1;
-  width: 100%;
+  width: 100vw;
   box-shadow: 0 -3px 10px ${(props) => props.theme.mainColor};
   transition: 0.3s ease-out;
 

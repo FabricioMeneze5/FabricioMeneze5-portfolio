@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import { breakpoints } from '../../style';
 
 const typing = keyframes`
   from {
@@ -41,6 +42,10 @@ export const TextStyle = styled.div`
     width: 0;
     text-align: justify;
     user-select: none;
+
+    @media (max-width: ${breakpoints.mobile}) {
+      font-size: 24px;
+    }
   }
 
   p:nth-of-type(1) {
