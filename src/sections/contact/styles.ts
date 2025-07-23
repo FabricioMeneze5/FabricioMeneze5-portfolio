@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { breakpoints } from '../../style';
 
 export const ContactContainer = styled.div`
   display: flex;
@@ -9,6 +10,10 @@ export const ContactContainer = styled.div`
   height: 500px;
   overflow-y: hidden;
   color: ${(props) => props.theme.mainTextColor};
+
+  @media (max-width: ${breakpoints.mobile}) {
+    height: auto;
+  }
 
   h3 {
     text-align: center;
@@ -31,6 +36,15 @@ export const ContactContainer = styled.div`
     form {
       width: 100%;
       max-width: calc(50%);
+    }
+
+    @media (max-width: ${breakpoints.mobile}) {
+      flex-direction: column;
+
+      img,
+      form {
+        max-width: 100%;
+      }
     }
   }
 `;

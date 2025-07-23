@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { breakpoints } from '../../style';
 
 export const Cards = styled.ul`
   overflow-y: auto;
@@ -15,6 +16,10 @@ export const Cards = styled.ul`
     gap: 35px;
     padding: 5px 5px 15px;
     overflow-y: hidden;
+
+    @media (max-width: ${breakpoints.mobile}) {
+      grid-template-columns: 1fr;
+    }
   }
 `;
 

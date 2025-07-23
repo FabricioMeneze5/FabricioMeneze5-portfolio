@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { breakpoints } from '../../style';
 
 export const ServicesCont = styled.div`
   display: grid;
@@ -6,7 +7,11 @@ export const ServicesCont = styled.div`
   gap: 30px;
   justify-items: center;
   width: 100%;
-  padding: 10px 0;
+  padding: 10px;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const ServiceCard = styled.div`
@@ -19,6 +24,10 @@ export const ServiceCard = styled.div`
   border: 1px solid ${(props) => props.theme.mainColor};
   box-shadow: inset 0 0 0 0 ${(props) => props.theme.background2};
   transition: transform 0.3s ease-out;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    height: auto;
+  }
 
   &:hover {
     transform: scale(1.04);
@@ -46,6 +55,10 @@ export const ServiceCard = styled.div`
       height: 100%;
       object-fit: cover;
       margin-right: 10px;
+
+      @media (max-width: ${breakpoints.mobile}) {
+        width: 40%;
+      }
     }
 
     p {
@@ -56,6 +69,10 @@ export const ServiceCard = styled.div`
       font-weight: light;
       font-style: italic;
       text-overflow: ellipsis;
+
+      @media (max-width: ${breakpoints.mobile}) {
+        font-size: 14px;
+      }
     }
   }
 `;

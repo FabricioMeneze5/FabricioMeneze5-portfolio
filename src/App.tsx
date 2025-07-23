@@ -28,7 +28,6 @@ function App() {
         <Projects />
         <Services />
         <Contact />
-
         <Footer />
       </ThemeProvider>
     </>

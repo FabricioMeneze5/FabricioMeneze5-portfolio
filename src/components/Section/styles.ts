@@ -1,14 +1,18 @@
 import styled from 'styled-components';
 import { Props } from '.';
+import { breakpoints } from '../../style';
 
 export const Container = styled.div<Omit<Props, 'title' | 'id' | 'children'>>`
-  /* background-color: ${(props) => props.theme.background2}; */
   width: 100%;
-  /* height: calc(100vh - 10px); */
   height: 100vh;
   padding-top: 64px;
   background-color: ${(props) =>
     props.background === 'bg1' ? props.theme.background1 : props.theme.background2};
+
+  @media (max-width: ${breakpoints.mobile}) {
+    height: 100%;
+    padding-bottom: ${(props) => (props.isLast ? '24px' : '0')};
+  }
 `;
 
 export const Title = styled.div`
@@ -34,4 +38,8 @@ export const Title = styled.div`
 export const Content = styled.div`
   width: 100%;
   height: calc(100vh - 128px);
+
+  @media (max-width: ${breakpoints.mobile}) {
+    height: 100%;
+  }
 `;

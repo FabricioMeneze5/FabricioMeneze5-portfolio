@@ -1,10 +1,16 @@
 import Lottie from 'lottie-react';
 import styled from 'styled-components';
+import { breakpoints } from '../../style';
 
 export const BgFooter = styled.div`
   width: 100%;
   height: 96px;
   background-color: ${(props) => props.theme.secundaryColor};
+
+  @media (max-width: ${breakpoints.mobile}) {
+    height: auto;
+    padding: 10px 0;
+  }
 `;
 
 export const ContainerFooter = styled.div`
@@ -21,6 +27,11 @@ export const ContainerFooter = styled.div`
       margin: 10px 0;
       font-weight: bold;
       color: ${(porps) => porps.theme.mainTextColor};
+
+      @media (max-width: ${breakpoints.mobile}) {
+        font-size: 12px;
+        margin: 10px 15px;
+      }
     }
   }
   button {
@@ -38,9 +49,13 @@ export const LottieWrapper = styled.div`
 
 export const LottieIcon = styled(Lottie)`
   width: 140px;
-  height: 140px;
+  aspect-ratio: 1/1;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media (max-width: ${breakpoints.mobile}) {
+    width: 110px;
+  }
 `;

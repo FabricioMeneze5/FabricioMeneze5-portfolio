@@ -8,8 +8,8 @@ export const BgHeader = styled.div`
   background-color: ${(props) => props.theme.secundaryColor};
   position: fixed;
   top: 0px;
-  z-index: 1;
-  width: 100vw;
+  z-index: 2;
+  width: 100%;
   box-shadow: 0 -3px 10px ${(props) => props.theme.mainColor};
   transition: 0.3s ease-out;
 

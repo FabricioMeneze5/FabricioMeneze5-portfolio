@@ -7,7 +7,7 @@ import * as S from './styles';
 
 const Contact = () => {
   return (
-    <Section title="Contact" id="contact" background="bg2">
+    <Section title="Contact" id="contact" background="bg2" isLast>
       <S.ContactContainer>
         <h3>let&apos;s work together</h3>
         <div>
