@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import { breakpoints } from '../../style';
 
 const slideEffect = keyframes`
   from {
@@ -11,11 +12,11 @@ const slideEffect = keyframes`
 
 export const ContainerSlide = styled.div`
   width: 100%;
-  height: 74px;
+  height: 54px;
   display: flex;
   overflow-x: hidden;
   position: absolute;
-  bottom: 0;
+  bottom: 4px;
 
   .slide {
     display: flex;
@@ -29,9 +30,13 @@ export const ContainerSlide = styled.div`
       animation: 60s ${slideEffect} infinite linear;
     }
   }
+
   img {
-    width: 52px;
-    height: 52px;
+    height: 100%;
     margin: 0 5px;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    height: 40px;
   }
 `;

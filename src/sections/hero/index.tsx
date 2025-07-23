@@ -43,10 +43,10 @@ const Hero = () => {
           </ul>
         </S.TextHero>
         <S.ImageHero>
-          <div className="shadow" />
           <S.TiltImg>
             <img src={avatar} alt="FabricioMeneze5 img" />
           </S.TiltImg>
+          <S.Shadow />
         </S.ImageHero>
       </S.HeroContent>
       <Slide />

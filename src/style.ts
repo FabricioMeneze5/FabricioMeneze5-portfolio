@@ -22,7 +22,7 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
-    overflow: hidden;
+    /* overflow: hidden; */
     border-left: 1px solid green;
     border-right: 1px solid green;
 

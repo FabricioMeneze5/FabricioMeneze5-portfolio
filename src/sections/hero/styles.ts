@@ -10,8 +10,11 @@ export const SectionHero = styled.div`
   width: 100%;
   height: 100vh;
   background-color: ${(props) => props.theme.background1};
-  position: relative;
   padding-bottom: 64px;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    padding: 64px 0;
+  }
 `;
 
 export const HeroContent = styled.div`
@@ -39,7 +42,6 @@ export const TextHero = styled.div`
   width: 100%;
   height: 100%;
   color: ${(props) => props.theme.mainColor};
-  background-color: chartreuse;
 
   > p {
     font-size: 64px;
@@ -89,7 +91,7 @@ export const TextHero = styled.div`
     justify-content: start;
 
     > p {
-      font-size: 52px;
+      font-size: 44px;
       text-align: center;
 
       span {
@@ -115,29 +117,7 @@ export const ImageHero = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: aquamarine;
-
-  .shadow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 30px 15px ${(props) => props.theme.mainTextColor};
-    position: relative;
-    top: 0;
-    right: 0;
-
-    @media (max-width: ${breakpoints.mobile}) {
-      width: 250px;
-      height: 250px;
-    }
-  }
-
-  @media (max-width: ${breakpoints.mobile}) {
-    padding-top: 64px;
-  }
+  position: relative;
 `;
 
 export const TiltImg = styled(Tilt).attrs({
@@ -149,25 +129,35 @@ export const TiltImg = styled(Tilt).attrs({
   glarePosition: 'top',
   glareBorderRadius: '200px',
 })`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  border: ridge 5px ${(props) => props.theme.background1};
-  position: absolute;
   overflow: hidden;
-  background-color: blue;
+  width: 80%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: ridge 5px ${(props) => props.theme.mainTextColor};
+  z-index: 1;
 
   @media (max-width: ${breakpoints.mobile}) {
-    width: 300px;
-    height: 300px;
+    width: 75%;
   }
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+`;
+
+export const Shadow = styled.div`
+  width: 65%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  box-shadow: 0px 0px 50px 20px ${(props) => props.theme.mainTextColor};
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (max-width: ${breakpoints.mobile}) {
+    width: 50%;
   }
 `;

@@ -18,3 +18,6 @@ OK - footer
 OK - rolamento da pagina para as sections e footer
 OK - layout em telas maiores / espaçamento dos h2
 OK - definir cores das sections intercaladas
+
+trabalhar na imagem que esta ficando maior que a div
+depois fazer o #FM e menu hamburguer

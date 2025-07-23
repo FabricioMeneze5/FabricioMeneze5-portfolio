@@ -28,7 +28,7 @@ const cursorB = keyframes`
   }
 `;
 export const TextStyle = styled.div`
-  height: 120px;
+  margin: 12px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,8 +42,10 @@ export const TextStyle = styled.div`
     width: 0;
     text-align: justify;
     user-select: none;
-
-    @media (max-width: ${breakpoints.mobile}) {
+  }
+  @media (max-width: ${breakpoints.mobile}) {
+    margin: 24px 0;
+    p {
       font-size: 24px;
     }
   }
