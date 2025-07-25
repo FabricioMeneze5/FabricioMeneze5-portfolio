@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react';
+
 import { BgHeader, NavBar, ContainerHeader, ToggleBtn } from './styles';
 
 type Props = {
@@ -6,12 +8,22 @@ type Props = {
 };
 
 const Header = ({ isDark, changeTheme }: Props) => {
+  const [viewWidth, setViewWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const veTamanho = () => setViewWidth(window.innerWidth);
+    veTamanho();
+    window.addEventListener('resize', veTamanho);
+
+    return () => window.removeEventListener('resize', veTamanho);
+  }, []);
+
   return (
     <BgHeader id="header">
       <ContainerHeader className="container">
         <h1>
           <b>#</b>
-          <a href="#hero">FabricioMeneze5</a>
+          <a href="#hero">{viewWidth < 639 ? 'FM5' : 'FabricioMeneze5'}</a>
         </h1>
         <NavBar>
           <li>

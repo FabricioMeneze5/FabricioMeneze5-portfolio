@@ -78,6 +78,7 @@ export const ToggleBtn = styled.div<Props>`
     position: absolute;
     transition: left 0.5s ease;
   }
+
   &:hover::after {
     transform: scale(1.1);
   }
