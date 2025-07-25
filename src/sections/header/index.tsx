@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { BgHeader, NavBar, ContainerHeader, ToggleBtn } from './styles';
+import { BgHeader, NavBar, ContainerHeader, ToggleBtn, BurgerMenu } from './styles';
 
 type Props = {
   isDark: boolean;
@@ -18,14 +18,23 @@ const Header = ({ isDark, changeTheme }: Props) => {
     return () => window.removeEventListener('resize', veTamanho);
   }, []);
 
+  const isMobile = viewWidth < 639;
+
   return (
     <BgHeader id="header">
       <ContainerHeader className="container">
         <h1>
           <b>#</b>
-          <a href="#hero">{viewWidth < 639 ? 'FM5' : 'FabricioMeneze5'}</a>
+          <a href="#hero">{isMobile ? 'FM5' : 'FabricioMeneze5'}</a>
         </h1>
-        <NavBar>
+        <BurgerMenu>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </BurgerMenu>
+        <NavBar showNavBar={isMobile}>
           <li>
             <a href="#projects">Projects</a>
           </li>

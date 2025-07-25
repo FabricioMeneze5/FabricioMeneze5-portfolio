@@ -2,6 +2,7 @@ import { styled } from 'styled-components';
 
 type Props = {
   isDark: boolean;
+  showNavBar: boolean;
 };
 
 export const BgHeader = styled.div`
@@ -28,6 +29,7 @@ export const ContainerHeader = styled.div`
   h1 {
     a {
       text-decoration: none;
+      font-family: 'Aldrich', sans-serif;
       color: ${(props) => props.theme.mainColor};
       font-size: 24px;
       font-weight: lighter;
@@ -42,8 +44,8 @@ export const ContainerHeader = styled.div`
   }
 `;
 
-export const NavBar = styled.ul`
-  display: flex;
+export const NavBar = styled.ul<Omit<Props, 'isDark'>>`
+  display: ${(props) => (props.showNavBar ? 'none' : 'flex')};
   align-items: center;
   color: ${(props) => props.theme.mainTextColor};
 
@@ -57,7 +59,34 @@ export const NavBar = styled.ul`
   }
 `;
 
-export const ToggleBtn = styled.div<Props>`
+export const BurgerMenu = styled.div`
+  display: block;
+  height: 100%;
+  aspect-ratio: 1/1;
+  background-color: ${(props) => props.theme.mainColor};
+  padding: 8px;
+  cursor: pointer;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    div {
+      background-color: ${(props) => props.theme.secundaryColor};
+      padding: 3px;
+      width: 100%;
+    }
+  }
+`;
+
+export const ToggleBtn = styled.div<Omit<Props, 'showNavBar'>>`
   padding: 4px;
   width: 50px;
   height: 24px;
