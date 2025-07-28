@@ -19,12 +19,13 @@ export const BgHeader = styled.div`
   }
 `;
 
-export const ContainerHeader = styled.div`
+export const ContainerHeader = styled.div<Omit<Props, 'isDark'>>`
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 64px;
+  position: relative;
 
   h1 {
     a {
@@ -42,15 +43,30 @@ export const ContainerHeader = styled.div`
       font-size: 24px;
     }
   }
+
+  .toggleNavBar {
+    display: ${(props) => (props.showNavBar ? 'flex' : 'none')};
+    flex-direction: column;
+    align-items: end;
+    width: 70%;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 2;
+    transition: all 0.3s ease;
+    font-size: 18px;
+  }
 `;
 
 export const NavBar = styled.ul<Omit<Props, 'isDark'>>`
-  display: ${(props) => (props.showNavBar ? 'none' : 'flex')};
+  display: flex;
   align-items: center;
+  transition: all 0.3s ease;
   color: ${(props) => props.theme.mainTextColor};
+  background-color: ${(props) => props.theme.secundaryColor};
 
   li {
-    margin-left: 12px;
+    padding: 10px;
 
     a {
       text-decoration: none;
@@ -59,8 +75,8 @@ export const NavBar = styled.ul<Omit<Props, 'isDark'>>`
   }
 `;
 
-export const BurgerMenu = styled.div`
-  display: block;
+export const BurgerMenu = styled.div<Omit<Props, 'isDark'>>`
+  display: ${(props) => (props.showNavBar ? 'block' : 'none')};
   height: 100%;
   aspect-ratio: 1/1;
   background-color: ${(props) => props.theme.mainColor};

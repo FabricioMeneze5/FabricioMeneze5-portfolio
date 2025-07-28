@@ -19,22 +19,25 @@ const Header = ({ isDark, changeTheme }: Props) => {
   }, []);
 
   const isMobile = viewWidth < 639;
+  const [navBarToggle, setNavBarToggle] = useState(isMobile);
 
   return (
     <BgHeader id="header">
-      <ContainerHeader className="container">
+      <ContainerHeader className="container" showNavBar={!navBarToggle}>
         <h1>
           <b>#</b>
           <a href="#hero">{isMobile ? 'FM5' : 'FabricioMeneze5'}</a>
         </h1>
-        <BurgerMenu>
+
+        <BurgerMenu showNavBar={isMobile} onClick={() => setNavBarToggle((prev) => !prev)}>
           <div>
             <div></div>
             <div></div>
             <div></div>
           </div>
         </BurgerMenu>
-        <NavBar showNavBar={isMobile}>
+
+        <NavBar showNavBar={isMobile} className={isMobile ? 'toggleNavBar' : ''}>
           <li>
             <a href="#projects">Projects</a>
           </li>
