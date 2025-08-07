@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 
-import Header from './sections//Header';
-import Hero from './sections/Hero';
-import Projects from './sections/Projects';
-import Services from './sections/ServicesSec';
-import Contact from './sections/Contact';
-import Footer from './sections/Footer';
+import Header from './sections/HeaderComponent';
+import Hero from './sections/HeroComponent';
+import Projects from './sections/ProjectsComponent';
+import Services from './sections/ServicesComponent';
+import Contact from './sections/ContactComponent';
+import Footer from './sections/FooterComponent';
 
 import { GlobalStyle } from './style';
 import themeLight from './themes/light';
