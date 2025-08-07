@@ -23,8 +23,8 @@ export const GlobalStyle = createGlobalStyle`
     width: 100%;
     margin: 0 auto;
     /* overflow: hidden; */
-    border-left: 1px solid green;
-    border-right: 1px solid green;
+    /* border-left: 1px solid green;
+    border-right: 1px solid green; */
 
     @media (max-width: ${breakpoints.mobile}) {
       max-width: 90%;

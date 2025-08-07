@@ -4,7 +4,7 @@ import Section from '../../components/Section';
 
 import Tags from '../../components/Tags';
 import Button from '../../components/Button';
-
+//id, name, description, url, languages[], homepage
 const Projects = () => {
   return (
     <Section title="Projects" id="projects" background="bg2">

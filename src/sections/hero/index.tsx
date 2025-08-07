@@ -1,4 +1,3 @@
-// import Tilt from 'react-parallax-tilt';
 import * as S from './styles';
 import Typewriter from '../../components/Typewriter';
 

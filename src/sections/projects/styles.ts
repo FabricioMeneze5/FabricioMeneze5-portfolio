@@ -19,6 +19,9 @@ export const Cards = styled.ul`
 
     @media (max-width: ${breakpoints.mobile}) {
       grid-template-columns: 1fr;
+      padding: 5px;
+      gap: 15px;
+      place-items: center;
     }
   }
 `;
@@ -40,7 +43,7 @@ export const Card = styled.li`
   &:hover {
     transform: scale(1.02);
     box-shadow: 5px 5px 1px 1px ${(props) => props.theme.mainTextColor};
-    border: solid 2px black;
+    border: solid 2px white;
   }
 
   > div {

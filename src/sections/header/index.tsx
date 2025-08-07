@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { BgHeader, NavBar, ContainerHeader, ToggleBtn, BurgerMenu } from './styles';
+import * as S from './styles';
 
 type Props = {
   isDark: boolean;
@@ -21,23 +21,27 @@ const Header = ({ isDark, changeTheme }: Props) => {
   const isMobile = viewWidth < 639;
   const [navBarToggle, setNavBarToggle] = useState(isMobile);
 
+  function toggleNavBar() {
+    setNavBarToggle(!navBarToggle);
+  }
+
   return (
-    <BgHeader id="header">
-      <ContainerHeader className="container" showNavBar={!navBarToggle}>
+    <S.BgHeader id="header">
+      <S.ContainerHeader className="container" showNavBar={!navBarToggle}>
         <h1>
           <b>#</b>
           <a href="#hero">{isMobile ? 'FM5' : 'FabricioMeneze5'}</a>
         </h1>
 
-        <BurgerMenu showNavBar={isMobile} onClick={() => setNavBarToggle((prev) => !prev)}>
+        <S.BurgerMenu showNavBar={isMobile} onClick={toggleNavBar}>
           <div>
             <div></div>
             <div></div>
             <div></div>
           </div>
-        </BurgerMenu>
+        </S.BurgerMenu>
 
-        <NavBar showNavBar={isMobile} className={isMobile ? 'toggleNavBar' : ''}>
+        <S.NavBar showNavBar={isMobile} className={isMobile ? 'toggleNavBar' : ''}>
           <li>
             <a href="#projects">Projects</a>
           </li>
@@ -51,11 +55,11 @@ const Header = ({ isDark, changeTheme }: Props) => {
           </li>
           <li>Pt/En</li>
           <li>
-            <ToggleBtn isDark={isDark} onClick={changeTheme} />
+            <S.ToggleBtn isDark={isDark} onClick={changeTheme} />
           </li>
-        </NavBar>
-      </ContainerHeader>
-    </BgHeader>
+        </S.NavBar>
+      </S.ContainerHeader>
+    </S.BgHeader>
   );
 };
 

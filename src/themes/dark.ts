@@ -7,8 +7,3 @@ const themeDark = {
 };
 
 export default themeDark;
-// Cor Principal
-// textos
-// bg 1
-// bg 2
-// Header e Footer
