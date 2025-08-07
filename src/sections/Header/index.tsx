@@ -46,7 +46,7 @@ const Header = ({ isDark, changeTheme }: Props) => {
             <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#services">Services</a>
+            <a href="#specialties">Specialties</a>
           </li>
           <li>
             <b>

@@ -6,9 +6,9 @@ import imgEcommerce from '../../assets/img/ecommerce.png';
 import imgApp from '../../assets/img/App.png';
 import imgMaintaince from '../../assets/img/maintaince.png';
 
-const Services = () => {
+const Specialties = () => {
   return (
-    <Section title="Services" id="services" background="bg1">
+    <Section title="Specialties" id="specialties" background="bg1">
       <S.ServicesCont>
         <S.ServiceCard>
           <h3>📱 Landing Pages</h3>
@@ -58,4 +58,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Specialties;
