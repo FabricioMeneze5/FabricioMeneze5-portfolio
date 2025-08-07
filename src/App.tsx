@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 
-import Header from './sections//Header/index';
+import Header from './sections//Header';
 import Hero from './sections/Hero';
 import Projects from './sections/Projects';
 import Services from './sections/ServicesSec';
