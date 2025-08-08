@@ -9,6 +9,7 @@
 
 Fabricio Meneze5 portfolio-
 
+OK - criar o Dominio
 OK - layout para telas menores
 OK - definir cores definitivas
 OK - definer services finais e textos

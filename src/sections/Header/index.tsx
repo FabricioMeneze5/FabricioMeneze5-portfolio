@@ -32,7 +32,7 @@ const Header = ({ isDark, changeTheme }: Props) => {
           <b>#</b>
           <a href="#hero">{isMobile ? 'FM5' : 'FabricioMeneze5'}</a>
         </h1>
-
+        <div style={{ color: 'red' }}>Versão de teste</div>
         <S.BurgerMenu showNavBar={isMobile} onClick={toggleNavBar}>
           <div>
             <div></div>
@@ -40,7 +40,6 @@ const Header = ({ isDark, changeTheme }: Props) => {
             <div></div>
           </div>
         </S.BurgerMenu>
-
         <S.NavBar showNavBar={isMobile} className={isMobile ? 'toggleNavBar' : ''}>
           <li>
             <a href="#projects">Projects</a>
