@@ -1,4 +1,12 @@
 - implementar API
+  -- languages_url (tags) para array e add no type Project
+  -- configurar comp Tags para receber a api
+  -- criar as imagens do projeto
+  OK -- implementar a api do git hub
+  OK -- criar uma array que recebera a api do git hub
+  -- implementar url nos botões
+
+- Scroll animation AOS
 - modal dos projetos
 - implementar SQL do form / React Hook Form
 - implementar ingles e portugues
@@ -9,6 +17,8 @@
 
 Fabricio Meneze5 portfolio-
 
+OK - aprender promises
+OK - aprender Async e Await
 OK - criar o Dominio
 OK - layout para telas menores
 OK - definir cores definitivas
@@ -38,3 +48,12 @@ https://api.github.com/users/FabricioMeneze5/followers
 https://api.github.com/users/FabricioMeneze5/following
 https://api.github.com/users/FabricioMeneze5/gists
 https://api.github.com/users/FabricioMeneze5/:>
+
+outro ponto, par anao vir a listagem completa de todos meus projetos do gitHub, como faço para trabalhar / aparecer só os que eu quiser?
+tem algo que nunca fiz, mas quero por imagens no meu projeto, e nao tem esse dado vindo da API do github.
+sera que posso usar isso
+const desiredRepos = ['meu-projeto-1', 'portfolio', 'outro-projeto'];
+mas pegando pelo ID, depois fazendo um push com as respectivas imagens de cada projeto e depois um map para resdearizar tudo automaticamente.
+
+ou vc tem um jeito melho?
+se possivel me mostra minha ideia e depois como voce faria
