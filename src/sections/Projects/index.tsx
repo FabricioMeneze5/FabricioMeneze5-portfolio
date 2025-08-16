@@ -10,8 +10,8 @@ type GitHubRepo = {
   id: number;
   name: string;
   description: string | null;
-  url: string;
-  homepage: string | null;
+  html_url: string;
+  homepage: string;
   languages_url: [];
 };
 
@@ -103,13 +103,10 @@ const Projects = () => {
                 <h3>{res.title}</h3>
                 <Tags />
                 <div className="btns">
-                  <Button disabled type="button">
+                  <Button type="link" url={res.homepage}>
                     View
                   </Button>
-                  <Button
-                    url="https://www.youtube.com/watch?v=Duh2XH2yJcU&ab_channel=UOL"
-                    type="link"
-                  >
+                  <Button type="link" url={res.html_url}>
                     Code
                   </Button>
                 </div>

@@ -26,7 +26,7 @@ const Button = ({ type, children, disabled, onClick, url }: Props) => {
           {children}
         </S.buttonStyle>
       ) : (
-        <S.buttonStyle as="a" href={url}>
+        <S.buttonStyle as="a" target="_blank" href={url}>
           {children}
         </S.buttonStyle>
       )}
