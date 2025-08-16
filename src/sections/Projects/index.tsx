@@ -103,8 +103,15 @@ const Projects = () => {
                 <h3>{res.title}</h3>
                 <Tags />
                 <div className="btns">
-                  <Button type="button">View</Button>
-                  <Button type="button">Code</Button>
+                  <Button disabled type="button">
+                    View
+                  </Button>
+                  <Button
+                    url="https://www.youtube.com/watch?v=Duh2XH2yJcU&ab_channel=UOL"
+                    type="link"
+                  >
+                    Code
+                  </Button>
                 </div>
               </div>
             </S.Card>

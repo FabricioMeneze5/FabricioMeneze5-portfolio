@@ -1,12 +1,37 @@
 import * as S from './styles';
 
-type Props = {
-  type: 'button' | 'submit';
+type BaseProps = {
   children: string;
+  onClick?: () => void;
+  disabled?: boolean;
 };
 
-const Button = ({ type, children }: Props) => {
-  return <S.buttonStyle type={type}>{children}</S.buttonStyle>;
+type LinkButtonProps = BaseProps & {
+  type: 'link';
+  url: string;
+};
+
+type RegularButtonProps = BaseProps & {
+  type: 'button' | 'submit';
+  url?: never;
+};
+
+type Props = LinkButtonProps | RegularButtonProps;
+
+const Button = ({ type, children, disabled, onClick, url }: Props) => {
+  return (
+    <>
+      {type === 'submit' || type === 'button' ? (
+        <S.buttonStyle type={type} disabled={disabled} onSubmit={onClick}>
+          {children}
+        </S.buttonStyle>
+      ) : (
+        <S.buttonStyle as="a" href={url}>
+          {children}
+        </S.buttonStyle>
+      )}
+    </>
+  );
 };
 
 export default Button;
