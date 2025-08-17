@@ -14,46 +14,6 @@ export type Project = GitHubRepo & {
   languages: string[];
 };
 
-// Função principal para buscar e filtrar os projetos
-export const fetchProjects = async (): Promise<Project[]> => {
-  try {
-    const res = await fetch('https://api.github.com/users/FabricioMeneze5/repos', {
-      headers: {
-        Authorization: `token ${GITHUB_TOKEN}`,
-      },
-    });
-    const data: GitHubRepo[] = await res.json();
-
-    // Filtra apenas os repos desejados
-    const filteredData = data.filter((repo) => desiredRepos.some((d) => d.name === repo.name));
-
-    // Para cada repo, busca as linguagens e adiciona image + title
-    const projects: Project[] = await Promise.all(
-      filteredData.map(async (repo) => {
-        const langRes = await fetch(repo.languages_url);
-        const langData = await langRes.json();
-        const languages = Object.keys(langData); // transforma em array de strings
-
-        const desired = desiredRepos.find((d) => d.name === repo.name);
-
-        console.log(langData);
-        // console.log(langRes);
-        return {
-          ...repo,
-          title: desired?.title || repo.name,
-          image: desired?.image || '',
-          languages,
-        };
-      }),
-    );
-
-    return projects;
-  } catch (err) {
-    console.error('Error >>', err);
-    return [];
-  }
-};
-
 const desiredRepos: { name: string; title: string; image: string }[] = [
   {
     name: 'efood',
@@ -106,3 +66,42 @@ const desiredRepos: { name: string; title: string; image: string }[] = [
     image: 'https://picsum.photos/500?random12',
   },
 ];
+
+// Função principal para buscar e filtrar os projetos
+export const fetchProjects = async (): Promise<Project[]> => {
+  try {
+    const repos = await fetch('https://api.github.com/users/FabricioMeneze5/repos', {
+      headers: {
+        Authorization: `token ${GITHUB_TOKEN}`,
+      },
+    });
+    const reposJson: GitHubRepo[] = await repos.json();
+    // const tagsUrl = reposJson.map(({ languages_url }) => languages_url);
+
+    // Filtra apenas os repos desejados
+    const filteredData = reposJson.filter((repo) => desiredRepos.some((d) => d.name === repo.name));
+
+    // Para cada repo, busca as linguagens e adiciona image + title
+    const projects: Project[] = await Promise.all(
+      filteredData.map(async (repo) => {
+        const langRes = await fetch(repo.languages_url);
+        const langData = await langRes.json();
+        const languages = Object.keys(langData); // transforma em array de strings
+
+        const desired = desiredRepos.find((d) => d.name === repo.name);
+
+        return {
+          ...repo,
+          title: desired?.title || repo.name,
+          image: desired?.image || '',
+          languages,
+        };
+      }),
+    );
+
+    return projects;
+  } catch (err) {
+    console.error('Error >>', err);
+    return [];
+  }
+};
