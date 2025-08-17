@@ -13,12 +13,9 @@ const Tags = () => {
 
   return (
     <TagsContainer>
-      <li>TypeScripy</li>
-      <li>React</li>
-      <li>Redux</li>
-      {/* {getRepo.map((res) =>
+      {getRepo.map((res) =>
         res.languages.map((lang) => <li key={`${res.name}-${lang}`}>{lang}</li>),
-      )} */}
+      )}
     </TagsContainer>
   );
 };
