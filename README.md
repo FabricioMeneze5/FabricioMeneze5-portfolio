@@ -4,7 +4,7 @@
   -- criar as imagens do projeto
   OK -- implementar a api do git hub
   OK -- criar uma array que recebera a api do git hub
-  -- implementar url nos botões
+  OK -- implementar url nos botões
 
 - Scroll animation AOS
 - modal dos projetos
