@@ -15,8 +15,6 @@
 - criar o readMe
 - pt/en as a
 
-Fabricio Meneze5 portfolio-
-
 OK - aprender promises
 OK - aprender Async e Await
 OK - criar o Dominio
