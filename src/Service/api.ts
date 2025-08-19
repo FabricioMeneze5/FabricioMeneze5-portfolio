@@ -18,52 +18,52 @@ const desiredRepos: { name: string; title: string; image: string }[] = [
   {
     name: 'efood',
     title: 'E Food',
-    image: 'https://picsum.photos/500?random',
+    image: 'https://picsum.photos/500?random=1',
   },
   {
     name: 'agenda-de-contatos',
     title: 'Agenda de Contatos',
-    image: 'https://picsum.photos/500?random',
+    image: 'https://picsum.photos/500?random=2',
   },
   {
     name: 'arithmetic-calculator',
     title: 'Arithmetic Calculator',
-    image: 'https://picsum.photos/500?random',
+    image: 'https://picsum.photos/500?random=3',
   },
   {
     name: 'BMIcalculator',
     title: 'BMI Calculator',
-    image: 'https://picsum.photos/500?random',
+    image: 'https://picsum.photos/500?random=4',
   },
   {
     name: 'contact-list-95',
     title: 'Contact List 95',
-    image: 'https://picsum.photos/500?random',
+    image: 'https://picsum.photos/500?random=5',
   },
   {
     name: 'GameShop',
     title: 'GameShop',
-    image: 'https://picsum.photos/500?random',
+    image: 'https://picsum.photos/500?random=6',
   },
   {
     name: 'jQuery-Photos-Gallery',
     title: 'Photos Gallery',
-    image: 'https://picsum.photos/500?random',
+    image: 'https://picsum.photos/500?random=7',
   },
   {
     name: 'minhas-tarefas',
     title: 'Minhas Tarefas',
-    image: 'https://picsum.photos/500?random0',
+    image: 'https://picsum.photos/500?random=8',
   },
   {
     name: 'my_birthday',
     title: 'My Birthday',
-    image: 'https://picsum.photos/500?random1',
+    image: 'https://picsum.photos/500?random=9',
   },
   {
     name: 'Oasis-Hotel',
     title: 'Oasis Hotel',
-    image: 'https://picsum.photos/500?random12',
+    image: 'https://picsum.photos/500?random=10',
   },
 ];
 
