@@ -52,7 +52,7 @@ export const Card = styled.li`
   }
 
   h3 {
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
     color: ${(props) => props.theme.mainColor};
   }

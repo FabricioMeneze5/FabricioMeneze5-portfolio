@@ -76,23 +76,23 @@ export const fetchProjects = async (): Promise<Project[]> => {
       },
     });
     const reposJson: GitHubRepo[] = await repos.json();
-    // const tagsUrl = reposJson.map(({ languages_url }) => languages_url);
 
-    // Filtra apenas os repos desejados
+    // Filtra apenas os dados desejados
     const filteredData = reposJson.filter((repo) => desiredRepos.some((d) => d.name === repo.name));
 
     // Para cada repo, busca as linguagens e adiciona image + title
     const projects: Project[] = await Promise.all(
       filteredData.map(async (repo) => {
         const langRes = await fetch(repo.languages_url);
-        const langData = await langRes.json();
-        const languages = Object.keys(langData); // transforma em array de strings
+        const langJson = await langRes.json();
+        const languages = Object.keys(langJson); // transforma em array de strings
 
         const desired = desiredRepos.find((d) => d.name === repo.name);
 
+        console.log(languages);
         return {
           ...repo,
-          title: desired?.title || repo.name,
+          title: desired?.title || '',
           image: desired?.image || '',
           languages,
         };

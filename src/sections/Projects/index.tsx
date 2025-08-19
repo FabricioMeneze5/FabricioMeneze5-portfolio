@@ -25,7 +25,7 @@ const Projects = () => {
               <img src={res.image} alt="img" />
               <div>
                 <h3>{res.title}</h3>
-                <Tags />
+                <Tags langKey={res.name} languages={res.languages} />
                 <div className="btns">
                   <Button type="link" url={res.homepage}>
                     View
