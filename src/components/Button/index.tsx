@@ -19,6 +19,11 @@ type RegularButtonProps = BaseProps & {
 type Props = LinkButtonProps | RegularButtonProps;
 
 const Button = ({ type, children, disabled, onClick, url }: Props) => {
+  const hasLink = () => {
+    if (url === null || url === '') {
+      return (disabled = true);
+    }
+  };
   return (
     <>
       {type === 'submit' || type === 'button' ? (
@@ -26,7 +31,7 @@ const Button = ({ type, children, disabled, onClick, url }: Props) => {
           {children}
         </S.buttonStyle>
       ) : (
-        <S.buttonStyle as="a" target="_blank" href={url}>
+        <S.buttonStyle as="a" disabled={hasLink()} target="_blank" href={url}>
           {children}
         </S.buttonStyle>
       )}
