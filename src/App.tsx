@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import Header from './sections/Header';
 import Hero from './sections/Hero';
 import Projects from './sections/Projects';
-import Services from './sections/Specialties';
+import Stacks from './sections/Stacks';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 
@@ -26,7 +26,7 @@ function App() {
         <Header changeTheme={changeTheme} isDark={getTheme} />
         <Hero />
         <Projects />
-        <Services />
+        <Stacks />
         <Contact />
         <Footer />
       </ThemeProvider>
