@@ -4,11 +4,6 @@ import { breakpoints } from '../../style';
 export const Cards = styled.ul`
   overflow-y: auto;
   height: 100%;
-  scrollbar-width: none;
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
 
   > div {
     display: grid;

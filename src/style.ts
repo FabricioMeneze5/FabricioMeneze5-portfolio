@@ -18,13 +18,22 @@ export const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 
+  *::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: ${(props) => props.theme.mainColor};
+  }
+
+  *::-webkit-scrollbar-track {
+    background: ${(props) => props.theme.secundaryColor};
+  }
+
   .container {
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
-    /* overflow: hidden; */
-    /* border-left: 1px solid green;
-    border-right: 1px solid green; */
 
     @media (max-width: ${breakpoints.mobile}) {
       max-width: 90%;
