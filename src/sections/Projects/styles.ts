@@ -31,13 +31,13 @@ export const Card = styled.li`
   height: auto;
   padding-bottom: 14px;
   overflow: hidden;
-  background-color: ${(props) => props.theme.secundaryColor};
-  border: solid 2px ${(props) => props.theme.mainColor};
+  background-color: ${({ theme }) => theme.secundaryColor};
+  border: solid 2px ${({ theme }) => theme.mainColor};
   transition: 0.3s ease;
 
   &:hover {
     transform: scale(1.02);
-    box-shadow: 5px 5px 1px 1px ${(props) => props.theme.mainTextColor};
+    box-shadow: 5px 5px 1px 1px ${({ theme }) => theme.mainTextColor};
     border: solid 2px white;
   }
 
@@ -49,7 +49,7 @@ export const Card = styled.li`
   h3 {
     font-size: 20px;
     text-align: center;
-    color: ${(props) => props.theme.mainColor};
+    color: ${({ theme }) => theme.mainColor};
   }
 
   img {

@@ -23,11 +23,11 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: ${(props) => props.theme.mainColor};
+    background-color: ${({ theme }) => theme.mainColor};
   }
 
   *::-webkit-scrollbar-track {
-    background: ${(props) => props.theme.secundaryColor};
+    background: ${({ theme }) => theme.secundaryColor};
   }
 
   .container {

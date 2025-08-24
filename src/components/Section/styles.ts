@@ -6,12 +6,12 @@ export const Container = styled.div<Omit<Props, 'title' | 'id' | 'children'>>`
   width: 100%;
   height: 100vh;
   padding-top: 64px;
-  background-color: ${(props) =>
-    props.background === 'bg1' ? props.theme.background1 : props.theme.background2};
+  background-color: ${({ $bgColor, theme }) =>
+    $bgColor === 'bg1' ? theme.background1 : theme.background2};
 
   @media (max-width: ${breakpoints.mobile}) {
     height: 100%;
-    padding-bottom: ${(props) => (props.isLast ? '24px' : '0')};
+    padding-bottom: ${({ $isLast }) => ($isLast ? '24px' : '0')};
   }
 `;
 
@@ -26,12 +26,12 @@ export const Title = styled.div`
   h2 {
     font-family: 'Aldrich', sans-serif;
     font-weight: lighter;
-    color: ${(props) => props.theme.mainColor};
+    color: ${({ theme }) => theme.mainColor};
     margin: 0 10px;
   }
 
   b {
-    color: ${(props) => props.theme.mainTextColor};
+    color: ${({ theme }) => theme.mainTextColor};
   }
 `;
 

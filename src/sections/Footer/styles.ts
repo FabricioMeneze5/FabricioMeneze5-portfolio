@@ -5,7 +5,7 @@ import { breakpoints } from '../../style';
 export const BgFooter = styled.div`
   width: 100%;
   height: 96px;
-  background-color: ${(props) => props.theme.secundaryColor};
+  background-color: ${({ theme }) => theme.secundaryColor};
 
   @media (max-width: ${breakpoints.mobile}) {
     height: auto;

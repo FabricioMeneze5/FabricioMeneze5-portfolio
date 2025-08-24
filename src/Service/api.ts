@@ -68,12 +68,12 @@ const desiredRepos: { name: string; title: string; image: string; languages: str
     image: 'https://picsum.photos/300?random=10',
     languages: ['JavaScript', 'HTML', 'CSS'],
   },
-  {
-    name: 'projeto_calculadora_medias',
-    title: 'Calculadora de Medias',
-    image: 'https://picsum.photos/300?random=11',
-    languages: ['JavaScript', 'HTML', 'CSS'],
-  },
+  // {
+  //   name: 'projeto_calculadora_medias',
+  //   title: 'Calculadora de Medias',
+  //   image: 'https://picsum.photos/300?random=11',
+  //   languages: ['JavaScript', 'HTML', 'CSS'],
+  // },
   {
     name: 'CartorioEBAC',
     title: 'Cartorio EBAC',

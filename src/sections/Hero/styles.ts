@@ -9,7 +9,7 @@ export const SectionHero = styled.div`
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: ${(props) => props.theme.background1};
+  background-color: ${({ theme }) => theme.background1};
   padding-bottom: 64px;
 
   @media (max-width: ${breakpoints.mobile}) {
@@ -41,7 +41,7 @@ export const TextHero = styled.div`
   justify-content: center;
   width: 100%;
   height: 100%;
-  color: ${(props) => props.theme.mainColor};
+  color: ${({ theme }) => theme.mainColor};
 
   > p {
     font-size: 64px;
@@ -56,7 +56,7 @@ export const TextHero = styled.div`
   }
 
   span {
-    color: ${(props) => props.theme.mainTextColor};
+    color: ${({ theme }) => theme.mainTextColor};
   }
 
   ul {
@@ -133,7 +133,7 @@ export const TiltImg = styled(Tilt).attrs({
   width: 80%;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  border: ridge 5px ${(props) => props.theme.mainTextColor};
+  border: ridge 5px ${({ theme }) => theme.mainTextColor};
   z-index: 1;
 
   @media (max-width: ${breakpoints.mobile}) {
@@ -151,7 +151,7 @@ export const Shadow = styled.div`
   width: 65%;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  box-shadow: 0px 0px 50px 20px ${(props) => props.theme.mainTextColor};
+  box-shadow: 0px 0px 50px 20px ${({ theme }) => theme.mainTextColor};
   position: absolute;
   top: 50%;
   left: 50%;

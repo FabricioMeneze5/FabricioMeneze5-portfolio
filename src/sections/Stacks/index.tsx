@@ -8,7 +8,7 @@ import imgMaintaince from '../../assets/img/maintaince.png';
 
 const Stacks = () => {
   return (
-    <Section title="Stacks" id="stacks" background="bg1">
+    <Section title="Stacks" id="stacks" $bgColor="bg1">
       <S.ServicesCont>
         <S.ServiceCard>
           <h3>📱 Landing Pages</h3>

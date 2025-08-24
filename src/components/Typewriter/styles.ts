@@ -51,14 +51,14 @@ export const TextStyle = styled.div`
   }
 
   p:nth-of-type(1) {
-    border-right: 3px solid ${(props) => props.theme.mainTextColor};
+    border-right: 3px solid ${({ theme }) => theme.mainTextColor};
     animation:
       ${typing} 3s steps(22, end) forwards,
       ${cursorA} 0.6s step-end 0s 5 forwards;
   }
 
   p:nth-of-type(2) {
-    --cursor-color: ${(props) => props.theme.mainTextColor};
+    --cursor-color: ${({ theme }) => theme.mainTextColor};
     border-right: 3px solid transparent;
     animation:
       ${typing} 3s steps(22, end) forwards 3.3s,

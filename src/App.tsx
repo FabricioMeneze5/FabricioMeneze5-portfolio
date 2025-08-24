@@ -23,7 +23,7 @@ function App() {
     <>
       <ThemeProvider theme={getTheme ? themeDark : themeLight}>
         <GlobalStyle />
-        <Header changeTheme={changeTheme} isDark={getTheme} />
+        <Header changeTheme={changeTheme} $isDark={getTheme} />
         <Hero />
         <Projects />
         <Stacks />

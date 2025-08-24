@@ -20,9 +20,9 @@ export const ServiceCard = styled.div`
   padding: 10px;
   height: 264px;
   width: 100%;
-  background-color: ${(props) => props.theme.secundaryColor};
-  border: 1px solid ${(props) => props.theme.mainColor};
-  box-shadow: inset 0 0 0 0 ${(props) => props.theme.background2};
+  background-color: ${({ theme }) => theme.secundaryColor};
+  border: 1px solid ${({ theme }) => theme.mainColor};
+  box-shadow: inset 0 0 0 0 ${({ theme }) => theme.background2};
   transition: transform 0.3s ease-out;
 
   @media (max-width: ${breakpoints.mobile}) {
@@ -31,7 +31,7 @@ export const ServiceCard = styled.div`
 
   &:hover {
     transform: scale(1.04);
-    box-shadow: inset 100vw 0 0 0 ${(props) => props.theme.background2};
+    box-shadow: inset 100vw 0 0 0 ${({ theme }) => theme.background2};
     transition:
       transform 0.3s ease-out,
       box-shadow 1s ease-out;
@@ -42,7 +42,7 @@ export const ServiceCard = styled.div`
     margin-bottom: 10px;
     text-align: center;
     font-size: 24px;
-    color: ${(props) => props.theme.mainColor};
+    color: ${({ theme }) => theme.mainColor};
   }
 
   div {
@@ -64,7 +64,7 @@ export const ServiceCard = styled.div`
     p {
       flex: 1;
       text-align: center;
-      color: ${(props) => props.theme.mainTextColor};
+      color: ${({ theme }) => theme.mainTextColor};
       font-size: 18px;
       font-weight: light;
       font-style: italic;

@@ -17,7 +17,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <Section title="Projects" id="projects" background="bg2">
+    <Section title="Projects" id="projects" $bgColor="bg2">
       <S.Cards>
         <div>
           {getRepo.map((res) => (

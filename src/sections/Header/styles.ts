@@ -1,25 +1,25 @@
 import { styled } from 'styled-components';
 
 type Props = {
-  isDark: boolean;
-  showNavBar: boolean;
+  $isDark: boolean;
+  $showNavBar: boolean;
 };
 
 export const BgHeader = styled.div`
-  background-color: ${(props) => props.theme.secundaryColor};
+  background-color: ${({ theme }) => theme.secundaryColor};
   position: fixed;
   top: 0px;
   z-index: 2;
   width: 100%;
-  box-shadow: 0 -3px 10px ${(props) => props.theme.mainColor};
+  box-shadow: 0 -3px 10px ${({ theme }) => theme.mainColor};
   transition: 0.3s ease-out;
 
   &:hover {
-    box-shadow: 0 1px 10px ${(props) => props.theme.mainColor};
+    box-shadow: 0 1px 10px ${({ theme }) => theme.mainColor};
   }
 `;
 
-export const ContainerHeader = styled.div<Omit<Props, 'isDark'>>`
+export const ContainerHeader = styled.div<Omit<Props, '$isDark'>>`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,21 +31,21 @@ export const ContainerHeader = styled.div<Omit<Props, 'isDark'>>`
     a {
       text-decoration: none;
       font-family: 'Aldrich', sans-serif;
-      color: ${(props) => props.theme.mainColor};
+      color: ${({ theme }) => theme.mainColor};
       font-size: 24px;
       font-weight: lighter;
       font-style: italic;
     }
 
     b {
-      color: ${(props) => props.theme.mainTextColor};
+      color: ${({ theme }) => theme.mainTextColor};
       margin-right: 5px;
       font-size: 24px;
     }
   }
 
   .toggleNavBar {
-    display: ${(props) => (props.showNavBar ? 'flex' : 'none')};
+    display: ${({ $showNavBar }) => ($showNavBar ? 'flex' : 'none')};
     flex-direction: column;
     align-items: end;
     width: 70%;
@@ -58,28 +58,28 @@ export const ContainerHeader = styled.div<Omit<Props, 'isDark'>>`
   }
 `;
 
-export const NavBar = styled.ul<Omit<Props, 'isDark'>>`
+export const NavBar = styled.ul<Omit<Props, '$isDark'>>`
   display: flex;
   align-items: center;
   transition: all 0.3s ease;
-  color: ${(props) => props.theme.mainTextColor};
-  background-color: ${(props) => props.theme.secundaryColor};
+  color: ${({ theme }) => theme.mainTextColor};
+  background-color: ${({ theme }) => theme.secundaryColor};
 
   li {
     padding: 10px;
 
     a {
       text-decoration: none;
-      color: ${(props) => props.theme.mainTextColor};
+      color: ${({ theme }) => theme.mainTextColor};
     }
   }
 `;
 
-export const BurgerMenu = styled.div<Omit<Props, 'isDark'>>`
-  display: ${(props) => (props.showNavBar ? 'block' : 'none')};
+export const BurgerMenu = styled.div<Omit<Props, '$isDark'>>`
+  display: ${({ $showNavBar }) => ($showNavBar ? 'block' : 'none')};
   height: 100%;
   aspect-ratio: 1/1;
-  background-color: ${(props) => props.theme.mainColor};
+  background-color: ${({ theme }) => theme.mainColor};
   padding: 8px;
   cursor: pointer;
 
@@ -95,19 +95,19 @@ export const BurgerMenu = styled.div<Omit<Props, 'isDark'>>`
     }
 
     div {
-      background-color: ${(props) => props.theme.secundaryColor};
+      background-color: ${({ theme }) => theme.secundaryColor};
       padding: 3px;
       width: 100%;
     }
   }
 `;
 
-export const ToggleBtn = styled.div<Omit<Props, 'showNavBar'>>`
+export const ToggleBtn = styled.div<Omit<Props, '$showNavBar'>>`
   padding: 4px;
   width: 50px;
   height: 24px;
   border-radius: 12px;
-  background-color: ${(props) => props.theme.mainTextColor};
+  background-color: ${({ theme }) => theme.mainTextColor};
   cursor: pointer;
   position: relative;
   transition: all 0.3s ease;
@@ -117,9 +117,9 @@ export const ToggleBtn = styled.div<Omit<Props, 'showNavBar'>>`
     width: 18px;
     height: 18px;
     top: 3px;
-    left: ${(props) => (props.isDark ? '3px' : '26px')};
+    left: ${({ $isDark }) => ($isDark ? '3px' : '26px')};
     border-radius: 50%;
-    background-color: ${(props) => props.theme.background1};
+    background-color: ${({ theme }) => theme.background1};
     position: absolute;
     transition: left 0.5s ease;
   }
