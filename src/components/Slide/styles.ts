@@ -24,16 +24,21 @@ export const ContainerSlide = styled.div`
     &:hover .images {
       animation-play-state: paused;
     }
+
     .images {
       display: flex;
+      justify-content: space-around;
       align-items: center;
-      animation: 60s ${slideEffect} infinite linear;
+      min-width: 100vw;
+      width: max-content;
+      animation: 30s ${slideEffect} infinite linear;
     }
   }
 
   img {
     height: 100%;
     margin: 0 5px;
+    pointer-events: auto;
   }
 
   @media (max-width: ${breakpoints.mobile}) {
