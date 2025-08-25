@@ -31,7 +31,9 @@ const Contact = () => {
                 <textarea id="message" />
               </S.InputGroup>
             </div>
-            <Button type="submit">Send</Button>
+            <Button type="submit" disabled={true}>
+              Send
+            </Button>
           </S.Form>
         </div>
       </S.ContactContainer>
