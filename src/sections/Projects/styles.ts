@@ -29,7 +29,7 @@ export const Card = styled.li`
   width: 100%;
   max-width: 309px;
   height: auto;
-  padding-bottom: 14px;
+  padding: 8px 0;
   overflow: hidden;
   background-color: ${({ theme }) => theme.secundaryColor};
   border: solid 2px ${({ theme }) => theme.mainColor};
