@@ -23,18 +23,18 @@ export const ServiceCard = styled.div`
   background-color: ${({ theme }) => theme.secundaryColor};
   border: 1px solid ${({ theme }) => theme.mainColor};
   box-shadow: inset 0 0 0 0 ${({ theme }) => theme.background2};
-  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out !important;
 
   @media (max-width: ${breakpoints.mobile}) {
     height: auto;
   }
 
   &:hover {
-    transform: scale(1.04);
+    transform: scale(1.04) !important;
     box-shadow: inset 100vw 0 0 0 ${({ theme }) => theme.background2};
     transition:
       transform 0.3s ease-out,
-      box-shadow 1s ease-out;
+      box-shadow 1s ease-out !important;
   }
 
   h3 {
