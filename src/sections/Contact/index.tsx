@@ -11,7 +11,7 @@ const Contact = () => {
       <S.ContactContainer>
         <h3>let&apos;s work together</h3>
         <div>
-          <img src={ImageForm} alt="ants" />
+          <img src={ImageForm} alt="img" />
           <S.Form>
             <div>
               <S.InputGroup>

@@ -33,12 +33,15 @@ export const Card = styled.li`
   overflow: hidden;
   background-color: ${({ theme }) => theme.secundaryColor};
   border: solid 2px ${({ theme }) => theme.mainColor};
-  transition: 0.3s ease;
+  box-shadow: inset 0 0 0 0 ${({ theme }) => theme.background2};
+  transition: transform 0.3s ease-out;
 
   &:hover {
     transform: scale(1.02);
-    box-shadow: 5px 5px 1px 1px ${({ theme }) => theme.mainTextColor};
-    border: solid 2px white;
+    box-shadow: inset 100vw 0 0 0 ${({ theme }) => theme.background2};
+    transition:
+      transform 0.3s ease-out,
+      box-shadow 1.5s ease-out;
   }
 
   > div {
