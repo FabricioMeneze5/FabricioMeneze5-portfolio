@@ -35,7 +35,7 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 
     @media (max-width: ${breakpoints.mobile}) {
       max-width: 90%;
