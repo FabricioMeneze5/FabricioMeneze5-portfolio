@@ -22,7 +22,7 @@ const Stacks = () => {
   return (
     <Section title="Stacks" id="stacks" $bgColor="bg1">
       <S.ServicesCont>
-        <S.ServiceCard data-aos="fade-right">
+        <S.ServiceCard data-aos="flip-left">
           <h3>📱 Landing Pages</h3>
           <div>
             <img src={imgLandingPages} alt="img" />
@@ -33,7 +33,7 @@ const Stacks = () => {
           </div>
         </S.ServiceCard>
 
-        <S.ServiceCard data-aos="fade-left">
+        <S.ServiceCard data-aos="flip-right">
           <h3>🛒 E-commerce</h3>
           <div>
             <img src={imgEcommerce} alt="img" />
@@ -44,7 +44,7 @@ const Stacks = () => {
           </div>
         </S.ServiceCard>
 
-        <S.ServiceCard data-aos="fade-right">
+        <S.ServiceCard data-aos="flip-left">
           <h3>🧩 Web Apps Interativas</h3>
           <div>
             <img src={imgApp} alt="img" />
@@ -55,7 +55,7 @@ const Stacks = () => {
           </div>
         </S.ServiceCard>
 
-        <S.ServiceCard data-aos="fade-left">
+        <S.ServiceCard data-aos="flip-right">
           <h3>🛠️ Manutenção de Sites</h3>
           <div>
             <img src={imgMaintaince} alt="img" />

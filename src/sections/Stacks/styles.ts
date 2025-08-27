@@ -8,7 +8,6 @@ export const ServicesCont = styled.div`
   justify-items: center;
   width: 100%;
   padding: 10px;
-  overflow-y: hidden;
 
   @media (max-width: ${breakpoints.mobile}) {
     grid-template-columns: 1fr;
