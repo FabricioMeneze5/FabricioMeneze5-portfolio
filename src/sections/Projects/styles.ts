@@ -32,7 +32,7 @@ export const Card = styled.li`
   padding: 8px 0;
   overflow: hidden;
   background-color: ${({ theme }) => theme.secundaryColor};
-  border: solid 2px ${({ theme }) => theme.mainColor};
+  border: solid 1px ${({ theme }) => theme.mainColor};
   box-shadow: inset 0 0 0 0 ${({ theme }) => theme.background2};
   transition: transform 0.3s ease-out;
 

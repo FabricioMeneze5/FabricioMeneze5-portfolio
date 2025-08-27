@@ -3,6 +3,7 @@ import * as S from './styles';
 type BaseProps = {
   children: string;
   onClick?: () => void;
+  onSubmit?: () => void;
   disabled?: boolean;
 };
 
@@ -18,7 +19,7 @@ type RegularButtonProps = BaseProps & {
 
 type Props = LinkButtonProps | RegularButtonProps;
 
-const Button = ({ type, children, disabled, onClick, url }: Props) => {
+const Button = ({ type, children, disabled, onClick, onSubmit, url }: Props) => {
   const hasLink = () => {
     if (url === null || url === '') {
       return (disabled = true);
@@ -26,12 +27,16 @@ const Button = ({ type, children, disabled, onClick, url }: Props) => {
   };
   return (
     <>
-      {type === 'submit' || type === 'button' ? (
-        <S.buttonStyle type={type} disabled={disabled} onSubmit={onClick}>
+      {type === 'submit' ? (
+        <S.buttonStyle type={type} disabled={disabled} onSubmit={onSubmit}>
+          {children}
+        </S.buttonStyle>
+      ) : type === 'button' ? (
+        <S.buttonStyle type={type} disabled={disabled} onClick={onClick}>
           {children}
         </S.buttonStyle>
       ) : (
-        <S.buttonStyle as="a" disabled={hasLink()} target="_blank" href={url}>
+        <S.buttonStyle as="a" disabled={hasLink()} href={url} target="_blank">
           {children}
         </S.buttonStyle>
       )}

@@ -30,7 +30,7 @@ const Header = ({ $isDark, changeTheme }: Props) => {
       <S.ContainerHeader className="container" $showNavBar={!navBarToggle}>
         <h1>
           <b>#</b>
-          <a href="#hero">{isMobile ? 'FM5' : 'FabricioMeneze5'}</a>
+          <a href="fabriciomenezes.com">{isMobile ? 'FM5' : 'FabricioMeneze5'}</a>
         </h1>
         <div style={{ color: 'red' }}>Versão de teste</div>
         <S.BurgerMenu $showNavBar={isMobile} onClick={toggleNavBar}>

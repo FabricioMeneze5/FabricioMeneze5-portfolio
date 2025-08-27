@@ -15,7 +15,14 @@ const Footer = () => {
           <p>&copy; {getYear} FabricioMeneze5 — All rights reserved. </p>
           <p>Thanks for visiting my site and checking out my work!</p>
         </div>
-        <Button type="button">↑</Button>
+        <Button
+          type="button"
+          onClick={() => {
+            document.getElementById('hero')?.scrollIntoView();
+          }}
+        >
+          ↑
+        </Button>
       </S.ContainerFooter>
     </S.BgFooter>
   );
