@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-
 import * as S from './styles';
 
 import Section from '../../components/Section';
