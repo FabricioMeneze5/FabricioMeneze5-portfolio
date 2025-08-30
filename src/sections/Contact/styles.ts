@@ -55,9 +55,24 @@ export const Form = styled.form`
   flex-direction: column;
   align-items: center;
   text-align: center;
+  position: relative;
 
-  div {
+  > div {
     width: 100%;
+  }
+
+  &::after {
+    content: 'teste';
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: navy;
+    border: solid 3px red;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 `;
 
@@ -74,6 +89,7 @@ export const InputGroup = styled.div`
   input,
   textarea {
     width: 100%;
+    border: solid transparent 3px;
   }
 
   textarea {
