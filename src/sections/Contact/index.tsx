@@ -20,13 +20,18 @@ const Contact = () => {
     setPhone('');
     setMessage('');
   };
+
+  const isFilled = () => {
+    if (name === '' || email === '' || phone === '' || message === '') {
+      return true;
+    }
+    if (phone.length < 9) {
+      return true;
+    }
+  };
+
   function sendEmail(e: React.FormEvent) {
     e.preventDefault();
-
-    if (name === '' || email === '' || phone === '' || message === '') {
-      alert('preencha o formulario');
-      return;
-    }
 
     const templateParams = {
       from_name: name,
@@ -95,7 +100,9 @@ const Contact = () => {
                 />
               </S.InputGroup>
             </div>
-            <Button type="submit">Send</Button>
+            <Button type="submit" disabled={isFilled()}>
+              Send
+            </Button>
           </S.Form>
         </div>
       </S.ContactContainer>
