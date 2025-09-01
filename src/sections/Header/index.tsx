@@ -41,14 +41,20 @@ const Header = ({ $isDark, changeTheme }: Props) => {
         </S.BurgerMenu>
         <S.NavBar $showNavBar={isMobile} className={isMobile ? 'toggleNavBar' : ''}>
           <li>
-            <a href="#projects">Projects</a>
+            <a onClick={toggleNavBar} href="#projects">
+              Projects
+            </a>
           </li>
           <li>
-            <a href="#stacks">Stacks</a>
+            <a onClick={toggleNavBar} href="#stacks">
+              Stacks
+            </a>
           </li>
           <li>
             <b>
-              <a href="#contact">Contact</a>
+              <a onClick={toggleNavBar} href="#contact">
+                Contact
+              </a>
             </b>
           </li>
           {/* <li>Pt/En</li> */}
