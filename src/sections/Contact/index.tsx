@@ -124,7 +124,8 @@ const Contact = () => {
               <S.InputGroup>
                 <label htmlFor="phone">Phone</label>
                 <PhoneInput
-                  containerComponent={'button'}
+                  international
+                  autoComplete="tel"
                   id="phone"
                   onChange={(phone) => setPhone(phone)}
                   value={phone}
