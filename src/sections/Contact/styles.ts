@@ -31,7 +31,7 @@ export const ContactContainer = styled.div`
     gap: 20px;
     height: calc(100% - 51px);
 
-    img {
+    > img {
       width: 100%;
       height: 100%;
       max-width: calc(50%);
@@ -92,7 +92,8 @@ export const InputGroup = styled.div`
   }
 
   input,
-  textarea {
+  textarea,
+  button {
     width: 100%;
     border: solid transparent 3px;
   }

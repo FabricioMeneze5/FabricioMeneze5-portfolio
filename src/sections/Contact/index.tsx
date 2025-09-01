@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import PhoneInput from 'react-phone-number-input';
+import 'react-phone-number-input/style.css';
 import emailjs from '@emailjs/browser';
 
 import Button from '../../components/Button';
@@ -11,7 +13,7 @@ import * as S from './styles';
 const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
+  const [phone, setPhone] = useState<string | undefined>('');
   const [message, setMessage] = useState('');
 
   const [alertBox, setAlertBox] = useState({
@@ -46,7 +48,7 @@ const Contact = () => {
       });
       return false;
     }
-    if (phone.length < 9) {
+    if (phone === undefined || phone.length < 9) {
       setAlertBox({
         message: 'Preencha um telefone válido',
         $showAlert: true,
@@ -121,10 +123,10 @@ const Contact = () => {
               </S.InputGroup>
               <S.InputGroup>
                 <label htmlFor="phone">Phone</label>
-                <input
-                  type="number"
+                <PhoneInput
+                  containerComponent={'button'}
                   id="phone"
-                  onChange={(e) => setPhone(e.target.value)}
+                  onChange={(phone) => setPhone(phone)}
                   value={phone}
                 />
               </S.InputGroup>
