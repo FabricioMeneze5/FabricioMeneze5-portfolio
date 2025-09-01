@@ -32,7 +32,6 @@ const Header = ({ $isDark, changeTheme }: Props) => {
           <b>#</b>
           <a href="fabriciomenezes.com">{isMobile ? 'FM5' : 'FabricioMeneze5'}</a>
         </h1>
-        <div style={{ color: 'red' }}>Versão de teste</div>
         <S.BurgerMenu $showNavBar={isMobile} onClick={toggleNavBar}>
           <div>
             <div></div>
@@ -52,7 +51,7 @@ const Header = ({ $isDark, changeTheme }: Props) => {
               <a href="#contact">Contact</a>
             </b>
           </li>
-          <li>Pt/En</li>
+          {/* <li>Pt/En</li> */}
           <li>
             <S.ToggleBtn $isDark={$isDark} onClick={changeTheme} />
           </li>

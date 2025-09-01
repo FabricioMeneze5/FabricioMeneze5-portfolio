@@ -27,8 +27,8 @@ const Stacks = () => {
           <div>
             <img src={imgLandingPages} alt="img" />
             <p>
-              Páginas rápidas, responsivas e com foco em destacar seu serviço ou produto com clareza
-              e impacto.
+              Fast, responsive pages designed to highlight your service or product clearly and with
+              impact.
             </p>
           </div>
         </S.ServiceCard>
@@ -38,30 +38,30 @@ const Stacks = () => {
           <div>
             <img src={imgEcommerce} alt="img" />
             <p>
-              Lojas virtuais completas, prontas pra vender: carrinho, pagamento, cadastro de
-              produtos e layout adaptado ao seu negócio.
+              Complete online stores ready to sell: shopping cart, payment, product management, and
+              layouts tailored to your business.
             </p>
           </div>
         </S.ServiceCard>
 
         <S.ServiceCard data-aos="flip-left">
-          <h3>🧩 Web Apps Interativas</h3>
+          <h3>🧩 Interactive Web Apps</h3>
           <div>
             <img src={imgApp} alt="img" />
             <p>
-              Ferramentas e interfaces dinâmicas sob medida pro seu negócio, pensadas para engajar e
-              proporcionar interações ricas.
+              Custom tools and dynamic interfaces for your business, designed to engage users and
+              provide rich interactions.
             </p>
           </div>
         </S.ServiceCard>
 
         <S.ServiceCard data-aos="flip-right">
-          <h3>🛠️ Manutenção de Sites</h3>
+          <h3>🛠️ Website Maintenance</h3>
           <div>
             <img src={imgMaintaince} alt="img" />
             <p>
-              Atualização de textos, imagens, preços, seções e funcionalidades. Seu site sempre em
-              dia, sem complicação.
+              Updates for text, images, prices, sections, and features. Keep your website up-to-date
+              without hassle.
             </p>
           </div>
         </S.ServiceCard>
