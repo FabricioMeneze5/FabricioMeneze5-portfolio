@@ -34,7 +34,7 @@ const Contact = () => {
 
     if (name === '' || email === '' || phone === '' || message === '') {
       setAlertBox({
-        message: 'Preencha todos os campos',
+        message: 'Fill in all fields',
         $showAlert: true,
         $hasError: true,
       });
@@ -42,7 +42,7 @@ const Contact = () => {
     }
     if (!emailInput.checkValidity()) {
       setAlertBox({
-        message: 'Preencha um email válido',
+        message: 'Please enter a valid email',
         $showAlert: true,
         $hasError: true,
       });
@@ -50,7 +50,7 @@ const Contact = () => {
     }
     if (phone === undefined || phone.length < 9) {
       setAlertBox({
-        message: 'Preencha um telefone válido',
+        message: 'Please enter a valid phone',
         $showAlert: true,
         $hasError: true,
       });
@@ -78,7 +78,7 @@ const Contact = () => {
       .then(
         () => {
           setAlertBox({
-            message: 'Email enviado com sucesso',
+            message: 'Email sent successfully',
             $showAlert: true,
             $hasError: false,
           });
@@ -86,7 +86,7 @@ const Contact = () => {
         },
         (error) => {
           setAlertBox({
-            message: `'FAILED: ', ${error.text}`,
+            message: `'Error: ', ${error.text}`,
             $showAlert: true,
             $hasError: true,
           });
