@@ -14,6 +14,12 @@ const Contact = () => {
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
 
+  const [alertBox, setAlertBox] = useState({
+    message: '',
+    $showAlert: false,
+    $hasError: false,
+  });
+
   const cleanForm = () => {
     setName('');
     setEmail('');
@@ -21,17 +27,40 @@ const Contact = () => {
     setMessage('');
   };
 
-  const isFilled = () => {
+  const validateForm = () => {
+    const emailInput = document.getElementById('email') as HTMLInputElement;
+
     if (name === '' || email === '' || phone === '' || message === '') {
-      return true;
+      setAlertBox({
+        message: 'Preencha todos os campos',
+        $showAlert: true,
+        $hasError: true,
+      });
+      return false;
+    }
+    if (!emailInput.checkValidity()) {
+      setAlertBox({
+        message: 'Preencha um email válido',
+        $showAlert: true,
+        $hasError: true,
+      });
+      return false;
     }
     if (phone.length < 9) {
-      return true;
+      setAlertBox({
+        message: 'Preencha um telefone válido',
+        $showAlert: true,
+        $hasError: true,
+      });
+      return false;
     }
+    return true;
   };
 
   function sendEmail(e: React.FormEvent) {
     e.preventDefault();
+
+    if (!validateForm()) return;
 
     const templateParams = {
       from_name: name,
@@ -46,11 +75,19 @@ const Contact = () => {
       })
       .then(
         () => {
-          alert('SUCCESS!');
+          setAlertBox({
+            message: 'Email enviado com sucesso',
+            $showAlert: true,
+            $hasError: false,
+          });
           cleanForm();
         },
         (error) => {
-          alert(`'FAILED: ', ${error.text}`);
+          setAlertBox({
+            message: `'FAILED: ', ${error.text}`,
+            $showAlert: true,
+            $hasError: true,
+          });
         },
       );
   }
@@ -99,8 +136,11 @@ const Contact = () => {
                   value={message}
                 />
               </S.InputGroup>
+              <S.AlertBox $hasError={alertBox.$hasError} $showAlert={alertBox.$showAlert}>
+                {alertBox.message}
+              </S.AlertBox>
             </div>
-            <Button type="submit" disabled={isFilled()}>
+            <Button type="submit" onClick={validateForm}>
               Send
             </Button>
           </S.Form>

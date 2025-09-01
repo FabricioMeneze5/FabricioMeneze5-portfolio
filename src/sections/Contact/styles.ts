@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 import { breakpoints } from '../../style';
 
+type Props = {
+  $hasError: boolean;
+  $showAlert: boolean;
+};
+
 export const ContactContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -96,4 +101,14 @@ export const InputGroup = styled.div`
     resize: none;
     height: 96px;
   }
+`;
+
+export const AlertBox = styled.p<Props>`
+  display: ${({ $showAlert }) => ($showAlert ? 'block' : 'none')};
+  background-color: ${({ $hasError }) => ($hasError ? '#ff4d4dcc' : '#0cd137cc')};
+  padding: 2px;
+  font-weight: bold;
+  color: #fff;
+  text-align: start;
+  border: 2px solid ${({ $hasError }) => ($hasError ? 'red' : 'green')};
 `;
