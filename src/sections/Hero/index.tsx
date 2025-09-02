@@ -1,7 +1,7 @@
 import * as S from './styles';
 import Typewriter from '../../components/Typewriter';
 
-import avatar from '../../assets/img/eu (2).jpg';
+import avatar from '../../assets/img/eu.jpg';
 import Slide from '../../components/Slide';
 import github from '../../assets/svg/github.svg';
 import linkedin from '../../assets/svg/linkedin.svg';
@@ -54,3 +54,4 @@ const Hero = () => {
 };
 
 export default Hero;
+//2, 3, 4
