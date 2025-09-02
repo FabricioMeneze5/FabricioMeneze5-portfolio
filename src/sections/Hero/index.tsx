@@ -54,4 +54,3 @@ const Hero = () => {
 };
 
 export default Hero;
-//2, 3, 4
