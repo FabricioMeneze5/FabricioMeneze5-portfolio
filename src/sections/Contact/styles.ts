@@ -111,5 +111,5 @@ export const AlertBox = styled.p<Props>`
   color: #fff;
   text-align: start;
   border: 2px solid ${({ $hasError }) => ($hasError ? 'red' : 'green')};
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 `;

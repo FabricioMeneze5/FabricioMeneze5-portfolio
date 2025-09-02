@@ -4,10 +4,12 @@ import { breakpoints } from '../../style';
 
 export const Container = styled.div<Omit<Props, 'title' | 'id' | 'children'>>`
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   padding-top: 64px;
   background-color: ${({ $bgColor, theme }) =>
     $bgColor === 'bg1' ? theme.background1 : theme.background2};
+  padding-bottom: ${({ $isLast }) => ($isLast ? '24px' : '0')};
 
   @media (max-width: ${breakpoints.mobile}) {
     height: 100%;
@@ -37,7 +39,8 @@ export const Title = styled.div`
 
 export const Content = styled.div`
   width: 100%;
-  height: calc(100vh - 128px);
+  height: 100%;
+  /* height: calc(100vh - 128px); */
 
   @media (max-width: ${breakpoints.mobile}) {
     height: 100%;

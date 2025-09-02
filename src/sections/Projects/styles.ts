@@ -2,22 +2,16 @@ import styled from 'styled-components';
 import { breakpoints } from '../../style';
 
 export const Cards = styled.ul`
-  overflow-y: auto;
-  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  padding: 5px 5px 15px;
 
-  > div {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 35px;
-    padding: 5px 5px 15px;
-    overflow-y: hidden;
-
-    @media (max-width: ${breakpoints.mobile}) {
-      grid-template-columns: 1fr;
-      padding: 5px;
-      gap: 15px;
-      place-items: center;
-    }
+  @media (max-width: ${breakpoints.mobile}) {
+    grid-template-columns: 1fr;
+    padding: 5px;
+    gap: 15px;
+    place-items: center;
   }
 `;
 

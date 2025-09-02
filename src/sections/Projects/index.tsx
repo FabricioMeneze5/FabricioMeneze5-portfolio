@@ -18,25 +18,23 @@ const Projects = () => {
   return (
     <Section title="Projects" id="projects" $bgColor="bg2">
       <S.Cards>
-        <div>
-          {getRepo.map((res) => (
-            <S.Card key={res.name}>
-              <img src={res.image} alt="img" />
-              <div>
-                <h3>{res.title}</h3>
-                <Tags langKey={res.name} languages={res.languages} />
-                <div className="btns">
-                  <Button type="link" url={res.homepage}>
-                    View
-                  </Button>
-                  <Button type="link" url={res.html_url}>
-                    Code
-                  </Button>
-                </div>
+        {getRepo.map((res) => (
+          <S.Card key={res.name}>
+            <img src={res.image} alt="img" />
+            <div>
+              <h3>{res.title}</h3>
+              <Tags langKey={res.name} languages={res.languages} />
+              <div className="btns">
+                <Button type="link" url={res.homepage}>
+                  View
+                </Button>
+                <Button type="link" url={res.html_url}>
+                  Code
+                </Button>
               </div>
-            </S.Card>
-          ))}
-        </div>
+            </div>
+          </S.Card>
+        ))}
       </S.Cards>
     </Section>
   );
