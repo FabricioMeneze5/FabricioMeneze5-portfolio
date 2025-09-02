@@ -83,7 +83,7 @@ export const Form = styled.form`
 
 export const InputGroup = styled.div`
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   text-align: start;
 
   label {

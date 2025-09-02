@@ -15,7 +15,7 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState<string | undefined>('');
   const [message, setMessage] = useState('');
-
+  const [loading, setLoading] = useState(false);
   const [alertBox, setAlertBox] = useState({
     message: '',
     $showAlert: false,
@@ -64,6 +64,8 @@ const Contact = () => {
 
     if (!validateForm()) return;
 
+    setLoading(true);
+
     const templateParams = {
       from_name: name,
       from_email: email,
@@ -91,7 +93,8 @@ const Contact = () => {
             $hasError: true,
           });
         },
-      );
+      )
+      .finally(() => setLoading(false));
   }
 
   return (
@@ -143,8 +146,8 @@ const Contact = () => {
                 {alertBox.message}
               </S.AlertBox>
             </div>
-            <Button type="submit" onClick={validateForm}>
-              Send
+            <Button type="submit" onClick={validateForm} disabled={loading}>
+              {loading ? 'Sending...' : 'Send'}
             </Button>
           </S.Form>
         </div>
