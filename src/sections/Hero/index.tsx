@@ -36,7 +36,7 @@ const Hero = () => {
               </button>
               <div className="downloadBox">
                 <a
-                  href="downloads/CV-FabricioMenezes-Portugues.pdf"
+                  href="downloads/Cv-FabricioMenezes-Portugues.pdf"
                   download
                   onClick={toggleDownload}
                 >
