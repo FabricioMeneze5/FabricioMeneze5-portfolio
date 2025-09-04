@@ -3,6 +3,10 @@ import Lottie from 'lottie-react';
 import { breakpoints } from '../../style';
 import Tilt from 'react-parallax-tilt';
 
+type Props = {
+  $showDownload: boolean;
+};
+
 export const SectionHero = styled.div`
   display: flex;
   justify-content: center;
@@ -30,8 +34,9 @@ export const HeroContent = styled.div`
 `;
 
 export const LottieIcon = styled(Lottie)`
-  width: 125px;
-  height: 125px;
+  width: 129px;
+  height: 129px;
+  aspect-ratio: 1/1;
   background-color: #fff;
 `;
 
@@ -59,33 +64,6 @@ export const TextHero = styled.div`
     color: ${({ theme }) => theme.mainTextColor};
   }
 
-  ul {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-
-    li:nth-child(1) {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-    }
-    li:nth-child(2) {
-      border-radius: 50%;
-    }
-
-    li {
-      margin: 0 10px;
-      height: 64px;
-      width: 64px;
-      overflow: hidden;
-    }
-
-    a {
-      display: block;
-    }
-  }
-
   @media (max-width: ${breakpoints.mobile}) {
     align-items: center;
     justify-content: start;
@@ -101,12 +79,90 @@ export const TextHero = styled.div`
     > p:nth-of-type(2) {
       text-align: center;
     }
+  }
+`;
 
-    ul {
-      li {
-        height: 44px;
-        width: 44px;
+export const IconsList = styled.ul<Props>`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  li:nth-child(1) {
+    position: relative;
+
+    button {
+      border-radius: 50%;
+      cursor: pointer;
+      height: 100%;
+      width: 100%;
+      aspect-ratio: 1/1;
+      border: none;
+
+      .lottieContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        overflow: hidden;
       }
+    }
+
+    .downloadBox {
+      display: ${({ $showDownload }) => ($showDownload ? 'flex' : 'none')};
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+      position: absolute;
+      bottom: 105%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #fff;
+      border: 3px solid ${({ theme }) => theme.mainColor};
+      background-color: ${({ theme }) => theme.mainColor};
+      text-align: center;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 8px 1px ${({ theme }) => theme.mainTextColor};
+
+      a {
+        display: block;
+        white-space: nowrap;
+        width: 100%;
+        padding: 4px 8px;
+        text-decoration: none;
+        transition: 0.05s ease-in-out;
+        color: #000;
+        background-color: #fff;
+
+        &:hover {
+          background-color: azure;
+          transform: scale(1.05);
+          color: ${({ theme }) => theme.mainColor};
+        }
+      }
+    }
+  }
+
+  li:nth-child(2) {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  li {
+    margin: 0 10px;
+    height: 64px;
+    width: 64px;
+  }
+
+  a {
+    display: block;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    li {
+      height: 44px;
+      width: 44px;
     }
   }
 `;
@@ -117,7 +173,7 @@ export const ImageHero = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
-  position: relative;
+  position: relative; //-----------------------------------------------
 `;
 
 export const TiltImg = styled(Tilt).attrs({

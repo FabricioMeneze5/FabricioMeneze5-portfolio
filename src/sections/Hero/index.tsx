@@ -1,5 +1,7 @@
-import * as S from './styles';
+import { useState } from 'react';
+
 import Typewriter from '../../components/Typewriter';
+import * as S from './styles';
 
 import avatar from '../../assets/img/eu.jpg';
 import Slide from '../../components/Slide';
@@ -8,6 +10,12 @@ import linkedin from '../../assets/svg/linkedin.svg';
 import downloadAnimation from '../../assets/animations/download-animation.json';
 
 const Hero = () => {
+  const [$showDownload, setShowDownload] = useState(false);
+
+  const toggleDownload = () => {
+    setShowDownload(!$showDownload);
+  };
+
   return (
     <S.SectionHero id="hero">
       <S.HeroContent className="container">
@@ -19,11 +27,29 @@ const Hero = () => {
             Menezes<span>{'/>'}</span>
           </p>
           <Typewriter />
-          <ul>
+          <S.IconsList $showDownload={$showDownload}>
             <li>
-              <a href="downloads/download-test.txt" download>
-                <S.LottieIcon animationData={downloadAnimation} />
-              </a>
+              <button onClick={toggleDownload}>
+                <div className="lottieContainer">
+                  <S.LottieIcon animationData={downloadAnimation} />
+                </div>
+              </button>
+              <div className="downloadBox">
+                <a
+                  href="public/downloads/CV-Fabricio-Menezes-Portugues.pdf"
+                  download
+                  onClick={toggleDownload}
+                >
+                  CV Português
+                </a>
+                <a
+                  href="public/downloads/Cv-Fabricio-Menezes-English.pdf"
+                  download
+                  onClick={toggleDownload}
+                >
+                  CV English
+                </a>
+              </div>
             </li>
             <li>
               <a href="https://github.com/FabricioMeneze5" target="_blank" rel="noreferrer">
@@ -39,7 +65,7 @@ const Hero = () => {
                 <img src={linkedin} alt="linkedin" />
               </a>
             </li>
-          </ul>
+          </S.IconsList>
         </S.TextHero>
         <S.ImageHero>
           <S.TiltImg>
