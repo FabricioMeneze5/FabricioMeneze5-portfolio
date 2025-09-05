@@ -1,5 +1,6 @@
-import Lottie from 'lottie-react';
 import styled from 'styled-components';
+import Lottie from 'lottie-react';
+
 import { breakpoints } from '../../style';
 
 export const BgFooter = styled.div`
@@ -26,7 +27,7 @@ export const ContainerFooter = styled.div`
     p {
       margin: 10px 0;
       font-weight: bold;
-      color: ${(porps) => porps.theme.mainTextColor};
+      color: ${({ theme }) => theme.mainTextColor};
 
       @media (max-width: ${breakpoints.mobile}) {
         font-size: 12px;

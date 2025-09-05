@@ -1,6 +1,8 @@
 import * as S from './styles';
-import imageIcon from '../../assets/animations/coffee-animation.json';
+
 import Button from '../../components/Button';
+
+import imageIcon from '../../assets/animations/coffee-animation.json';
 
 const getYear = new Date().getFullYear();
 
@@ -15,6 +17,7 @@ const Footer = () => {
           <p>&copy; {getYear} FabricioMeneze5 — All rights reserved. </p>
           <p>Thanks for visiting my site and checking out my work!</p>
         </div>
+
         <Button
           type="button"
           onClick={() => {

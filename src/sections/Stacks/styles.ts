@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import { breakpoints } from '../../style';
 
 export const ServicesCont = styled.div`

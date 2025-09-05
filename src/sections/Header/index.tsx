@@ -57,7 +57,6 @@ const Header = ({ $isDark, changeTheme }: Props) => {
               </a>
             </b>
           </li>
-          {/* <li>Pt/En</li> */}
           <li>
             <S.ToggleBtn $isDark={$isDark} onClick={changeTheme} />
           </li>

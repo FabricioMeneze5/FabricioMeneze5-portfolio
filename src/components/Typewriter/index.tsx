@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+
 import { TextStyle } from './styles';
 
 const Typewriter = () => {

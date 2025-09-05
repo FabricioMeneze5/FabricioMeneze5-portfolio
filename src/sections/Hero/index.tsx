@@ -1,7 +1,8 @@
 import { useState } from 'react';
 
-import Typewriter from '../../components/Typewriter';
 import * as S from './styles';
+
+import Typewriter from '../../components/Typewriter';
 
 import avatar from '../../assets/img/eu.jpg';
 import Slide from '../../components/Slide';
@@ -27,6 +28,7 @@ const Hero = () => {
             Menezes<span>{'/>'}</span>
           </p>
           <Typewriter />
+
           <S.IconsList $showDownload={$showDownload}>
             <li>
               <button onClick={toggleDownload}>
@@ -67,6 +69,7 @@ const Hero = () => {
             </li>
           </S.IconsList>
         </S.TextHero>
+
         <S.ImageHero>
           <S.TiltImg>
             <img src={avatar} alt="FabricioMeneze5 img" />
@@ -74,6 +77,7 @@ const Hero = () => {
           <S.Shadow />
         </S.ImageHero>
       </S.HeroContent>
+
       <Slide />
     </S.SectionHero>
   );

@@ -24,6 +24,7 @@ const Button = ({ type, children, disabled, onClick, url }: Props) => {
       return (disabled = true);
     }
   };
+
   return (
     <>
       {type === 'button' || type === 'submit' ? (

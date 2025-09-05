@@ -11,7 +11,7 @@ export const buttonStyle = styled.button<Props>`
   width: 120px;
   font-size: 16px;
   color: #fff;
-  background-color: ${(props) => (props.disabled ? '#8d8d8d' : props.theme.mainColor)};
+  background-color: ${({ disabled, theme }) => (disabled ? '#8d8d8d' : theme.mainColor)};
   cursor: pointer;
   text-decoration: none;
   text-align: center;

@@ -7,6 +7,7 @@ import * as S from './styles';
 import Section from '../../components/Section';
 import Tags from '../../components/Tags';
 import Button from '../../components/Button';
+
 import { fetchProjects, Project } from '../../Service/api';
 
 const Projects = () => {

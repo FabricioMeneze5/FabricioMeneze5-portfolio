@@ -1,14 +1,14 @@
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
-import emailjs from '@emailjs/browser';
+
+import * as S from './styles';
 
 import Button from '../../components/Button';
 import Section from '../../components/Section';
 
 import ImageForm from '../../assets/img/workTogether.png';
-
-import * as S from './styles';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -100,7 +100,7 @@ const Contact = () => {
   return (
     <Section title="Contact" id="contact" $bgColor="bg2" $isLast>
       <S.ContactContainer>
-        <h3>let&apos;s work together</h3>
+        <h3>Let&apos;s work together</h3>
         <div>
           <img src={ImageForm} alt="img" />
 

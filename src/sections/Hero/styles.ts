@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import Lottie from 'lottie-react';
-import { breakpoints } from '../../style';
 import Tilt from 'react-parallax-tilt';
+
+import { breakpoints } from '../../style';
 
 type Props = {
   $showDownload: boolean;

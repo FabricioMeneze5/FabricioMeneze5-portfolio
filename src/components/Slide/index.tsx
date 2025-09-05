@@ -19,9 +19,9 @@ import redux from '../../assets/svg/redux.svg';
 import sass from '../../assets/svg/sass.svg';
 import typescript from '../../assets/svg/typescript.svg';
 
-type dados = { name: string; img: string };
+type data = { name: string; img: string };
 
-const dados: dados[] = [
+const data: data[] = [
   { name: 'Git', img: git },
   { name: 'Html5', img: html5 },
   { name: 'JavaScript', img: javascript },
@@ -47,13 +47,13 @@ const Slide = () => {
     <S.ContainerSlide>
       <div className="slide">
         <div className="images">
-          {dados.map((dado, index) => (
-            <img key={index} src={dado.img} alt={dado.name} title={dado.name} />
+          {data.map((res, index) => (
+            <img key={index} src={res.img} alt={res.name} title={res.name} />
           ))}
         </div>
         <div className="images">
-          {dados.map((dado, index) => (
-            <img key={index} src={dado.img} alt={dado.name} title={dado.name} />
+          {data.map((res, index) => (
+            <img key={index} src={res.img} alt={res.name} title={res.name} />
           ))}
         </div>
       </div>

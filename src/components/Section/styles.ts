@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import { Props } from '.';
 import { breakpoints } from '../../style';
 
@@ -40,7 +41,6 @@ export const Title = styled.div`
 export const Content = styled.div`
   width: 100%;
   height: 100%;
-  /* height: calc(100vh - 128px); */
 
   @media (max-width: ${breakpoints.mobile}) {
     height: 100%;

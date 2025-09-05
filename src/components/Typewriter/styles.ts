@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+
 import { breakpoints } from '../../style';
 
 const typing = keyframes`
