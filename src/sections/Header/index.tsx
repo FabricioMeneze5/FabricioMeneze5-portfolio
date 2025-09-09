@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import i18n from 'i18next';
 
 import * as S from './styles';
 
@@ -9,6 +11,7 @@ type Props = {
 
 const Header = ({ $isDark, changeTheme }: Props) => {
   const [viewWidth, setViewWidth] = useState(window.innerWidth);
+  const { i18n: i18nextInstance, t } = useTranslation();
 
   useEffect(() => {
     const veTamanho = () => setViewWidth(window.innerWidth);
@@ -24,6 +27,11 @@ const Header = ({ $isDark, changeTheme }: Props) => {
   function toggleNavBar() {
     setNavBarToggle(!navBarToggle);
   }
+
+  const toggleLanguage = () => {
+    const newLang = i18nextInstance.language === 'en' ? 'pt' : 'en';
+    i18n.changeLanguage(newLang);
+  };
 
   return (
     <S.BgHeader id="header">
@@ -42,20 +50,30 @@ const Header = ({ $isDark, changeTheme }: Props) => {
         <S.NavBar $showNavBar={isMobile} className={isMobile ? 'toggleNavBar' : ''}>
           <li>
             <a onClick={toggleNavBar} href="#projects">
-              Projects
+              {t('header.l1')}
             </a>
           </li>
           <li>
             <a onClick={toggleNavBar} href="#stacks">
-              Stacks
+              {t('header.l2')}
             </a>
           </li>
+          {/* <li>
+            <a onClick={toggleNavBar} href="#stacks">
+              {t('header.l3')}
+            </a>
+          </li> */}
           <li>
             <b>
               <a onClick={toggleNavBar} href="#contact">
-                Contact
+                {t('header.l4')}
               </a>
             </b>
+          </li>
+          <li>
+            <button onClick={toggleLanguage}>
+              {i18nextInstance.language === 'en' ? 'Portug.' : 'English'}
+            </button>
           </li>
           <li>
             <S.ToggleBtn $isDark={$isDark} onClick={changeTheme} />

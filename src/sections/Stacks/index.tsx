@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -11,6 +12,8 @@ import imgApp from '../../assets/img/App.png';
 import imgMaintaince from '../../assets/img/maintaince.png';
 
 const Stacks = () => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     AOS.init({
       duration: 8000,
@@ -20,49 +23,37 @@ const Stacks = () => {
   }, []);
 
   return (
-    <Section title="Stacks" id="stacks" $bgColor="bg1">
+    <Section title={t('header.l2')} id="stacks" $bgColor="bg1">
       <S.ServicesCont>
         <S.ServiceCard data-aos="flip-left">
-          <h3>📱 Landing Pages</h3>
+          <h3>{t('stacks.t1')}</h3>
           <div>
             <img src={imgLandingPages} alt="img" />
-            <p>
-              Fast, responsive pages designed to highlight your service or product clearly and with
-              impact.
-            </p>
+            <p>{t('stacks.p1')}</p>
           </div>
         </S.ServiceCard>
 
         <S.ServiceCard data-aos="flip-right">
-          <h3>🛒 E-commerce</h3>
+          <h3>{t('stacks.t2')}</h3>
           <div>
             <img src={imgEcommerce} alt="img" />
-            <p>
-              Complete online stores ready to sell: shopping cart, payment, product management, and
-              layouts tailored to your business.
-            </p>
+            <p>{t('stacks.p2')}</p>
           </div>
         </S.ServiceCard>
 
         <S.ServiceCard data-aos="flip-left">
-          <h3>🧩 Interactive Web Apps</h3>
+          <h3>{t('stacks.t3')}</h3>
           <div>
             <img src={imgApp} alt="img" />
-            <p>
-              Custom tools and dynamic interfaces for your business, designed to engage users and
-              provide rich interactions.
-            </p>
+            <p>{t('stacks.p3')}</p>
           </div>
         </S.ServiceCard>
 
         <S.ServiceCard data-aos="flip-right">
-          <h3>🛠️ Website Maintenance</h3>
+          <h3>{t('stacks.t4')}</h3>
           <div>
             <img src={imgMaintaince} alt="img" />
-            <p>
-              Updates for text, images, prices, sections, and features. Keep your website up-to-date
-              without hassle.
-            </p>
+            <p>{t('stacks.p4')}</p>
           </div>
         </S.ServiceCard>
       </S.ServicesCont>

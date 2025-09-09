@@ -1,0 +1,42 @@
+{
+  "header": {
+    "l1": "Projetos",
+    "l2": "Serviços",
+    "l3": "Sobre",
+    "l4": "Contato"
+  },
+  "stacks": {
+    "t1": "📱 Landing Pages",
+    "p1": "Páginas rápidas e responsivas, projetadas para destacar seu serviço ou produto de forma clara e com impacto.",
+    "t2": "🛒 E-commerce",
+    "p2": "Lojas virtuais completas e prontas para vender: carrinho de compras, pagamento, gestão de produtos e layouts adaptados ao seu negócio.",
+    "t3": "🧩 Aplicações Web Interativas",
+    "p3": "Ferramentas personalizadas e interfaces dinâmicas para o seu negócio, criadas para engajar usuários e oferecer interações ricas.",
+    "t4": "🛠️ Manutenção de Sites",
+    "p4": "Atualizações de textos, imagens, preços, seções e funcionalidades. Mantenha seu site sempre atualizado sem complicação."
+  },
+  "contact": {
+    "t1": "Vamos trabalhar juntos!",
+    "inp1": "Nome / Empresa",
+    "inp2": "E-mail",
+    "inp3": "Telefone",
+    "inp4": "Mensagem"
+  },
+  "footer": {
+    "t1": "Todos os direitos reservados",
+    "t2": "Obrigado por visitar meu site e conferir meu trabalho!"
+  },
+  "button": {
+    "t1": "Ver",
+    "t2": "Código",
+    "t3": "Enviar",
+    "t4": "Enviando..."
+  },
+  "alertBox": {
+    "fill": "Preencha todos os campos",
+    "email": "Por favor, insira um e-mail válido",
+    "phone": "Por favor, insira um telefone válido",
+    "success": "E-mail enviado com sucesso",
+    "error": "Erro: "
+  }
+}

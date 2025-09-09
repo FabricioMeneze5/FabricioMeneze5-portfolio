@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import emailjs from '@emailjs/browser';
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
@@ -11,6 +12,7 @@ import Section from '../../components/Section';
 import ImageForm from '../../assets/img/workTogether.png';
 
 const Contact = () => {
+  const { t } = useTranslation();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState<string | undefined>('');
@@ -34,7 +36,7 @@ const Contact = () => {
 
     if (name === '' || email === '' || phone === '' || message === '') {
       setAlertBox({
-        message: 'Fill in all fields',
+        message: `${t('alertBox.fill')}`,
         $showAlert: true,
         $hasError: true,
       });
@@ -42,7 +44,7 @@ const Contact = () => {
     }
     if (!emailInput.checkValidity()) {
       setAlertBox({
-        message: 'Please enter a valid email',
+        message: `${t('alertBox.email')}`,
         $showAlert: true,
         $hasError: true,
       });
@@ -50,7 +52,7 @@ const Contact = () => {
     }
     if (phone === undefined || phone.length < 9) {
       setAlertBox({
-        message: 'Please enter a valid phone',
+        message: `${t('alertBox.phone')}`,
         $showAlert: true,
         $hasError: true,
       });
@@ -80,7 +82,7 @@ const Contact = () => {
       .then(
         () => {
           setAlertBox({
-            message: 'Email sent successfully',
+            message: `${t('alertBox.success')}`,
             $showAlert: true,
             $hasError: false,
           });
@@ -88,7 +90,7 @@ const Contact = () => {
         },
         (error) => {
           setAlertBox({
-            message: `'Error: ', ${error.text}`,
+            message: `${t('alertBox.error')}, ${error.text}`,
             $showAlert: true,
             $hasError: true,
           });
@@ -98,16 +100,16 @@ const Contact = () => {
   }
 
   return (
-    <Section title="Contact" id="contact" $bgColor="bg2" $isLast>
+    <Section title={t('header.l4')} id="contact" $bgColor="bg2" $isLast>
       <S.ContactContainer>
-        <h3>Let&apos;s work together</h3>
+        <h3>{t('contact.t1')}</h3>
         <div>
           <img src={ImageForm} alt="img" />
 
           <S.Form onSubmit={sendEmail} id="form">
             <div>
               <S.InputGroup>
-                <label htmlFor="name">Name / Company</label>
+                <label htmlFor="name">{t('contact.inp1')}</label>
                 <input
                   type="text"
                   id="name"
@@ -116,7 +118,7 @@ const Contact = () => {
                 />
               </S.InputGroup>
               <S.InputGroup>
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email">{t('contact.inp2')}</label>
                 <input
                   type="email"
                   id="email"
@@ -125,7 +127,7 @@ const Contact = () => {
                 />
               </S.InputGroup>
               <S.InputGroup>
-                <label htmlFor="phone">Phone</label>
+                <label htmlFor="phone">{t('contact.inp3')}</label>
                 <PhoneInput
                   international
                   autoComplete="tel"
@@ -135,7 +137,7 @@ const Contact = () => {
                 />
               </S.InputGroup>
               <S.InputGroup>
-                <label htmlFor="message">Message</label>
+                <label htmlFor="message">{t('contact.inp4')}</label>
                 <textarea
                   id="message"
                   onChange={(e) => setMessage(e.target.value)}
@@ -147,7 +149,7 @@ const Contact = () => {
               </S.AlertBox>
             </div>
             <Button type="submit" onClick={validateForm} disabled={loading}>
-              {loading ? 'Sending...' : 'Send'}
+              {loading ? `${t('button.t4')}` : `${t('button.t3')}`}
             </Button>
           </S.Form>
         </div>

@@ -72,6 +72,22 @@ export const NavBar = styled.ul<Omit<Props, '$isDark'>>`
       text-decoration: none;
       color: ${({ theme }) => theme.mainTextColor};
     }
+
+    > button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 8px;
+      height: 24px;
+      border-radius: 12px;
+      background-color: ${({ theme }) => theme.mainTextColor};
+      cursor: pointer;
+      color: ${({ theme }) => theme.background1};
+      font-weight: bolder;
+      border: none;
+      position: relative;
+      transition: all 0.3s ease;
+    }
   }
 `;
 

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -12,6 +13,7 @@ import { fetchProjects, Project } from '../../Service/api';
 
 const Projects = () => {
   const [getRepo, setRepo] = useState<Project[]>([]);
+  const { t } = useTranslation();
 
   useEffect(() => {
     fetchProjects()
@@ -28,7 +30,7 @@ const Projects = () => {
   }, [getRepo]);
 
   return (
-    <Section title="Projects" id="projects" $bgColor="bg2">
+    <Section title={t('header.l1')} id="projects" $bgColor="bg2">
       <S.Cards>
         {getRepo.map((res) => (
           <S.Card key={res.name} data-aos="flip-right">
@@ -38,10 +40,10 @@ const Projects = () => {
               <Tags langKey={res.name} languages={res.languages} />
               <div className="btns">
                 <Button type="link" url={res.homepage}>
-                  View
+                  {t('button.t1')}
                 </Button>
                 <Button type="link" url={res.html_url}>
-                  Code
+                  {t('button.t2')}
                 </Button>
               </div>
             </div>
