@@ -58,11 +58,11 @@ const Header = ({ $isDark, changeTheme }: Props) => {
               {t('header.l2')}
             </a>
           </li>
-          {/* <li>
-            <a onClick={toggleNavBar} href="#stacks">
+          <li>
+            <a onClick={toggleNavBar} href="#about">
               {t('header.l3')}
             </a>
-          </li> */}
+          </li>
           <li>
             <b>
               <a onClick={toggleNavBar} href="#contact">

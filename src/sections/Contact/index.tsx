@@ -100,7 +100,7 @@ const Contact = () => {
   }
 
   return (
-    <Section title={t('header.l4')} id="contact" $bgColor="bg2" $isLast>
+    <Section title={t('header.l4')} id="contact" $bgColor="bg1" $isLast>
       <S.ContactContainer>
         <h3>{t('contact.t1')}</h3>
         <div>

@@ -5,6 +5,7 @@ import Header from './sections/Header';
 import Hero from './sections/Hero';
 import Projects from './sections/Projects';
 import Stacks from './sections/Stacks';
+import About from './sections/About';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 
@@ -27,6 +28,7 @@ function App() {
         <Hero />
         <Projects />
         <Stacks />
+        <About />
         <Contact />
         <Footer />
       </ThemeProvider>
