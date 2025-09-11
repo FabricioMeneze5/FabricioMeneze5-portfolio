@@ -15,6 +15,9 @@
     "t4": "🛠️ Website Maintenance",
     "p4": "Updates for text, images, prices, sections, and features. Keep your website up-to-date without hassle."
   },
+  "about": {
+    "title": "About Me"
+  },
   "contact": {
     "t1": "Let's work together!",
     "inp1": "Name / Company",

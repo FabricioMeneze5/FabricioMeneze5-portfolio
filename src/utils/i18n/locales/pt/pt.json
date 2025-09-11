@@ -15,6 +15,9 @@
     "t4": "🛠️ Manutenção de Sites",
     "p4": "Atualizações de textos, imagens, preços, seções e funcionalidades. Mantenha seu site sempre atualizado sem complicação."
   },
+  "about": {
+    "title": "Sobre mim"
+  },
   "contact": {
     "t1": "Vamos trabalhar juntos!",
     "inp1": "Nome / Empresa",
