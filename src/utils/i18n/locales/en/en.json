@@ -16,7 +16,16 @@
     "p4": "Updates for text, images, prices, sections, and features. Keep your website up-to-date without hassle."
   },
   "about": {
-    "title": "About Me"
+    "title": "About me",
+    "t1": "$ career --path",
+    "p1": "I started out in administration, hospitality, and later my own business. In Portugal, I resumed my passion for technology and, since June 2023, I have been studying programming. I have worked as an IT Supervisor for 2 years and now I aim to steer my career toward software development, combining my management experience with my programming knowledge.",
+    "t2": "$ courses --list",
+    "p2": "Java Backend Dev. (EBAC) | JavaScript Front-end Dev. (EBAC) | Administrative Assistant (Casa da Moeda do Brasil) | GNU/Linux Systems Administration (Udemy) | ITSM - IT Service Management (Udemy)",
+    "t3": "$ stacks --list",
+    "p3": "React, TypeScript, Java | Vue, jQuery, Redux | SASS, Bootstrap, Cypress",
+    "t4": "$ hobbies",
+    "p4": "Coffee ☕, League of Legends, Coffee ☕, Anime, Coffee ☕, *One Piece*, Coffee ☕.",
+    "t5": "$ contact --email"
   },
   "contact": {
     "t1": "Let's work together!",

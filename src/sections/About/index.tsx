@@ -27,31 +27,19 @@ const About = () => {
             <small>Microsoft Windows [Version 00.0.0000]</small>
             <b>C:\Users\FabricioMeneze5{'>'}</b>
           </p>
-          <b>$ carreira --path</b>
-          <p>
-            Iniciei em administração, restauração e posteriormente em um negócio próprio. Em
-            Portugal retomei minha paixão na área de tecnologia e, desde junho de 2023, estudo
-            programação. Hoje atuo como Supervisor de TI há 2 anos e busco direcionar minha carreira
-            em desenvolvimento de software, unindo minha experiência em gestão com meu conhecimento
-            em programação.
-          </p>
+          <b>{t('about.t1')}</b>
+          <p>{t('about.p1')}</p>
 
-          <b>$ cursos --list</b>
-          <p>
-            Dev Backend Java (EBAC) <b>|</b> Dev Front-end JavaScript (EBAC) <b>|</b> Auxiliar
-            Administrativo (Casa da Moeda do Brasil) <b>|</b> Adm de Sistemas GNU/Linux (Udemy){' '}
-            <b>|</b> ITSM - Gestão de serviços de TI (Udemy)
-          </p>
+          <b>{t('about.t2')}</b>
+          <p>{t('about.p2')}</p>
 
-          <b>$ tecnologias --list</b>
-          <p>
-            React, TypeScript, Java <b>|</b> Vue, jQuery, Redux <b>|</b> SASS, Bootstrap, Cypress
-          </p>
+          <b>{t('about.t3')}</b>
+          <p>{t('about.p3')}</p>
 
-          <b>$ interesses</b>
-          <p>Café ☕, League of Legends, Café ☕, Animes, Café ☕, *One Piece*, Café ☕. </p>
+          <b>{t('about.t4')}</b>
+          <p>{t('about.p4')}</p>
 
-          <b>$ contato --email</b>
+          <b>{t('about.t5')}</b>
           <p>fabricio-menezes@live.com</p>
         </S.ContentAbout>
       </S.AboutContainer>

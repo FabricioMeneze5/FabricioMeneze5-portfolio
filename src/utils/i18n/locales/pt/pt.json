@@ -16,7 +16,16 @@
     "p4": "Atualizações de textos, imagens, preços, seções e funcionalidades. Mantenha seu site sempre atualizado sem complicação."
   },
   "about": {
-    "title": "Sobre mim"
+    "title": "Sobre mim",
+    "t1": "$ carreira --path",
+    "p1": "Iniciei em administração, restauração e posteriormente em um negócio próprio. Em Portugal retomei minha paixão na área de tecnologia e, desde junho de 2023, estudo programação. Hoje atuo como Supervisor de TI há 2 anos e busco direcionar minha carreira em desenvolvimento de software, unindo minha experiência em gestão com meu conhecimento em programação.",
+    "t2": "$ cursos --list",
+    "p2": "Dev Backend Java (EBAC) | Dev Front-end JavaScript (EBAC) | Auxiliar Administrativo (Casa da Moeda do Brasil) | Adm de Sistemas GNU/Linux (Udemy) | ITSM - Gestão de serviços de TI (Udemy)",
+    "t3": "$ tecnologias --list",
+    "p3": "React, TypeScript, Java | Vue, jQuery, Redux | SASS, Bootstrap, Cypress",
+    "t4": "$ hobbies",
+    "p4": "Café ☕, League of Legends, Café ☕, Animes, Café ☕, *One Piece*, Café ☕.",
+    "t5": "$ contato --email"
   },
   "contact": {
     "t1": "Vamos trabalhar juntos!",
