@@ -7,7 +7,6 @@ import git from '../../assets/svg/git.svg';
 import grunt from '../../assets/svg/grunt.svg';
 import gulp from '../../assets/svg/gulp.svg';
 import html5 from '../../assets/svg/html5.svg';
-import java from '../../assets/svg/java.svg';
 import javascript from '../../assets/svg/javascript.svg';
 import jest from '../../assets/svg/jest.svg';
 import jquery from '../../assets/svg/jquery.svg';
@@ -29,7 +28,6 @@ const data: data[] = [
   { name: 'Jquery', img: jquery },
   { name: 'React', img: react },
   { name: 'Redux', img: redux },
-  { name: 'Java', img: java },
   { name: 'Nodejs', img: nodejs },
   { name: 'npm', img: npm },
   { name: 'ESlint', img: eslint },
