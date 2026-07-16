@@ -17,14 +17,15 @@
   },
   "about": {
     "title": "About me",
-    "t1": "$ career --path",
-    "p1": "I started my professional career in administration, hospitality and small business experience, and later returned to the technology field while living in Portugal. Since 2023, I have been studying programming and I currently work as an IT Operations Analyst. I am now looking to move my career toward software development, combining my management experience with my learning in programming to contribute to new projects in a solid way and with continuous personal growth.",
-    "p2": "Data Base and PostgreSQL (Udemy) | Front-end Dev. (EBAC) | Administrative Assistant (Casa da Moeda do Brasil) | GNU/Linux Systems Administration (Udemy) | ITSM - IT Service Management (Udemy)",
-    "t3": "$ stacks --list",
-    "p3": "React, TypeScript, Java | Vue, jQuery, Redux | SASS, Bootstrap, Cypress",
-    "t4": "$ hobbies",
-    "p4": "Coffee ☕, League of Legends, Coffee ☕, Anime, Coffee ☕, *One Piece*, Coffee ☕.",
-    "t5": "$ contact --email"
+    "t1": "$ Trajectory --path",
+    "p1": "Nice to meet you, I'm Fabricio! From making games in MUGEN as a teenager to IT Supervisor, I always dreamed of working in tech, and I did it by operating a Data Center in Portugal. Today, I combine my degree with development studies to do my best in every line of code, infrastructure, or automation. My journey is driven by persistence, and I keep growing in the area I love within the IT ecosystem.",
+    "t2": "$ Education --list",
+    "p2": "Information Systems - UCAM",
+    "t3": "$ Courses --list",
+    "p3": "Database with PostgreSQL (Udemy) | Frontend (EBAC) | GNU/Linux Systems Administration (Udemy) | ITSM - IT Service Management (Udemy) | Administrative Assistant (Casa da Moeda do Brasil)",
+    "t4": "$ Skills --list",
+    "p4": "React, TypeScript, C Language, Java | Vue, jQuery, Redux | SASS, Bootstrap, Cypress | Git, GitHub | Figma",
+    "t5": "$ Contact --email"
   },
   "contact": {
     "t1": "Let's work together!",
