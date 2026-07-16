@@ -9,16 +9,23 @@ import Section from '../../components/Section';
 import Tags from '../../components/Tags';
 import Button from '../../components/Button';
 
+import imageIcon from '../../assets/animations/coffee-animation.json';
+
 import { fetchProjects, Project } from '../../Service/api';
 
 const Projects = () => {
   const [getRepo, setRepo] = useState<Project[]>([]);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
   const { t } = useTranslation();
 
   useEffect(() => {
+    setIsLoading(true);
     fetchProjects()
       .then((data) => setRepo(data))
-      .catch((err) => console.log(err));
+      .catch((err) => console.log(err))
+      .finally(() => {
+        setIsLoading(false);
+      });
   }, []);
 
   useEffect(() => {
@@ -31,25 +38,33 @@ const Projects = () => {
 
   return (
     <Section title={t('header.l1')} id="projects" $bgColor="bg2">
-      <S.Cards>
-        {getRepo.map((res) => (
-          <S.Card key={res.name} data-aos="flip-right">
-            <img src={res.image} alt="img" />
-            <div>
-              <h3>{res.title}</h3>
-              <Tags langKey={res.name} languages={res.languages} />
-              <div className="btns">
-                <Button type="link" url={res.homepage}>
-                  {t('button.t1')}
-                </Button>
-                <Button type="link" url={res.html_url}>
-                  {t('button.t2')}
-                </Button>
+      {isLoading ? (
+        <div>
+          <S.LottieWrapper>
+            <S.LottieIcon animationData={imageIcon} />
+          </S.LottieWrapper>
+        </div>
+      ) : (
+        <S.Cards>
+          {getRepo.map((res) => (
+            <S.Card key={res.name} data-aos="flip-right">
+              <img src={res.image} alt="img" />
+              <div>
+                <h3>{res.title}</h3>
+                <Tags langKey={res.name} languages={res.languages} />
+                <div className="btns">
+                  <Button type="link" url={res.homepage}>
+                    {t('button.t1')}
+                  </Button>
+                  <Button type="link" url={res.html_url}>
+                    {t('button.t2')}
+                  </Button>
+                </div>
               </div>
-            </div>
-          </S.Card>
-        ))}
-      </S.Cards>
+            </S.Card>
+          ))}
+        </S.Cards>
+      )}
     </Section>
   );
 };
