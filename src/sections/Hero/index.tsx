@@ -38,14 +38,14 @@ const Hero = () => {
               </button>
               <div className="downloadBox">
                 <a
-                  href="downloads/Currículo-Fabricio_Menezes-Portugues.pdf"
+                  href="downloads/Currículo-Fabricio_Menezes-Ptbr-V2.pdf"
                   download
                   onClick={toggleDownload}
                 >
                   CV Português
                 </a>
                 <a
-                  href="downloads/Curriculum-Fabricio_Menezes-English.pdf"
+                  href="downloads/Curriculum-Fabricio_Menezes-Eng-V2.pdf"
                   download
                   onClick={toggleDownload}
                 >
