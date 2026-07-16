@@ -3,11 +3,8 @@ import IMGbirthday from '../assets/img/projectsSection/birthday 2 desktop-front.
 import IMGcontactBook from '../assets/img/projectsSection/contact book 2 desktop-front.png';
 import IMGcontactList from '../assets/img/projectsSection/contact list 2 desktop-front.png';
 import IMGdisney from '../assets/img/projectsSection/disney clone 2 desktop-front.png';
-import IMGoasis from '../assets/img/projectsSection/oasis 2 desktop-front.png';
 import IMGgalery from '../assets/img/projectsSection/photos gallery 2 desktop-front.png';
-import IMGrandomNumber from '../assets/img/projectsSection/random number picker 2 desktop-front.png';
 import IMGefood from '../assets/img/projectsSection/efood 2 desktop-front.png';
-import IMGminhasTarefas from '../assets/img/projectsSection/minhasTarefas 2 desktop-front.png';
 import IMGclientRegister from '../assets/img/projectsSection/clientRegister 2 desktop-front.png';
 import IMGcartorio from '../assets/img/projectsSection/cartorio 2 desktop-front.png';
 
@@ -40,12 +37,6 @@ const desiredRepos: { name: string; title: string; image: string; languages: str
     languages: ['Node', 'TypeScript', 'React', 'Redux', 'Styled-Components'],
   },
   {
-    name: 'todo-vue',
-    title: 'Minhas Tarefas',
-    image: IMGminhasTarefas,
-    languages: ['Vue', 'JavaScript', 'Bootstrap'],
-  },
-  {
     name: 'BMIcalculator',
     title: 'BMI Calculator',
     image: IMGbmi,
@@ -62,12 +53,6 @@ const desiredRepos: { name: string; title: string; image: string; languages: str
     title: 'Disney Plus clone',
     image: IMGdisney,
     languages: ['JavaScript', 'HTML', 'SASS'],
-  },
-  {
-    name: 'random_number_picker',
-    title: 'Random Number Picker',
-    image: IMGrandomNumber,
-    languages: ['Node', 'JavaScript', 'HTML', 'Less'],
   },
   {
     name: 'jQuery-Photos-Gallery',
@@ -93,21 +78,15 @@ const desiredRepos: { name: string; title: string; image: string; languages: str
     image: IMGclientRegister,
     languages: ['Java'],
   },
-  {
-    name: 'OasisHotel2',
-    title: 'Oasis Resort',
-    image: IMGoasis,
-    languages: ['JavaScript', 'HTML', 'SASS'],
-  },
 ];
 
 export const fetchProjects = async (): Promise<Project[]> => {
   try {
-    const repos = await fetch('https://api.github.com/users/FabricioMeneze5/subscriptions', {
+    const repos = await fetch('https://api.github.com/users/FabricioMeneze5/repos', {
       headers: { Authorization: `token ${GITHUB_TOKEN}` },
     });
     const reposJson: GitHubRepo[] = await repos.json();
-
+    console.log('Retorno do GitHub:', reposJson);
     const filteredData = reposJson.filter((repo) => desiredRepos.some((d) => d.name === repo.name));
 
     return filteredData.map((repo) => {
