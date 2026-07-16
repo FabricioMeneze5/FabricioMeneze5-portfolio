@@ -83,13 +83,22 @@ const desiredRepos: { name: string; title: string; image: string; languages: str
 export const fetchProjects = async (): Promise<Project[]> => {
   try {
     const repos = await fetch('https://api.github.com/users/FabricioMeneze5/repos', {
-      headers: { Authorization: `token ${GITHUB_TOKEN}` },
+      headers: { Authorization: `Bearer ${GITHUB_TOKEN}` },
     });
-    const reposJson: GitHubRepo[] = await repos.json();
-    console.log('Retorno do GitHub:', reposJson);
-    const filteredData = reposJson.filter((repo) => desiredRepos.some((d) => d.name === repo.name));
 
-    return filteredData.map((repo) => {
+    if (!repos.ok) {
+      const errorData = await repos.json();
+      console.error('Erro na API do GitHub:', errorData);
+      return [];
+    }
+
+    const reposJson = await repos.json();
+
+    const filteredData = reposJson.filter((repo: GitHubRepo) =>
+      desiredRepos.some((d) => d.name === repo.name),
+    );
+
+    return filteredData.map((repo: GitHubRepo) => {
       const manual = desiredRepos.find((d) => d.name === repo.name);
       if (!manual) {
         return {
